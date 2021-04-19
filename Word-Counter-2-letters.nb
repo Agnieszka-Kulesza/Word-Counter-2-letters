@@ -1,0 +1,1795 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[RowBox[{"language"," ","="," ","\"Croatian\""}]],
+"Input",CellLabel -> "In[2]:= ",ExpressionUUID -> "d20f6c19-739d-48d0-956b-a070dff761f6"],Cell[
+BoxData[
+"\"Croatian\"",StandardForm],"Output",CellLabel -> "Out[2]= ",ExpressionUUID -> "2db0491b-a9b6-4ff5-8ead-d66637d35a49"]},
+Open],ExpressionUUID -> "e229bed6-e102-435d-a09b-9d00d8db4903"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"alfabet"," ","="," ",RowBox[{"Alphabet","[","language","]"}]}]],
+"Input",CellLabel -> "In[3]:= ",ExpressionUUID -> "d66c0c59-6599-46af-9bfa-f7d45d8bf82e"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"\"a\"",",","\"b\"",",","\"c\"",",","\"\[CHacek]\"",",","\"\[CAcute]\"",",","\"d\"",",","\"d\[ZHacek]\"",",","\"\:0111\"",",","\"e\"",",","\"f\"",",","\"g\"",",","\"h\"",",","\"i\"",",","\"j\"",",","\"k\"",",","\"l\"",",","\"lj\"",",","\"m\"",",","\"n\"",",","\"nj\"",",","\"o\"",",","\"p\"",",","\"r\"",",","\"s\"",",","\"\[SHacek]\"",",","\"t\"",",","\"u\"",",","\"v\"",",","\"z\"",",","\"\[ZHacek]\""}],"}"}],
+StandardForm],"Output",CellLabel -> "Out[3]= ",ExpressionUUID -> "7dd9381a-bf15-474a-a237-1471ef9bf372"]},
+Open],ExpressionUUID -> "87cd0f12-9931-4d65-9f76-44915b8f451f"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"dl"," ","="," ",RowBox[{"Length","[","alfabet","]"}]}]],"Input",
+CellLabel -> "In[4]:= ",ExpressionUUID -> "907acee8-03fb-4e9c-852d-8f4adfe470c7"],Cell[
+BoxData[
+"30",StandardForm],"Output",CellLabel -> "Out[4]= ",ExpressionUUID -> "93df418d-14e8-4ba2-9318-5293e2d60186"]},
+Open],ExpressionUUID -> "347fcabb-ea05-45b0-b267-fb37ff04a535"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"pary"," ","="," ",RowBox[{"Tuples","[",RowBox[{"alfabet",",","2"}],"]"}]}]],
+"Input",CellLabel -> "In[5]:= ",ExpressionUUID -> "e0c144f4-0f48-484d-a46c-62282d4f7b7f"],Cell[
+BoxData[
+InterpretationBox[TagBox[FrameBox[GridBox[{{ItemBox[TagBox[RowBox[{"{",RowBox[{RowBox[
+{"{",RowBox[{"\"a\"",",","\"a\""}],"}"}],",",RowBox[{"{",RowBox[{"\"a\"",",","\"b\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"a\"",",","\"c\""}],"}"}],",",RowBox[{"{",RowBox[{"\"a\"",",","\"\[CHacek]\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"a\"",",","\"\[CAcute]\""}],"}"}],",",RowBox[{"{",RowBox[{"\"a\"",",","\"d\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"a\"",",","\"d\[ZHacek]\""}],"}"}],",",RowBox[{"{",RowBox[{"\"a\"",",","\"\:0111\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"a\"",",","\"e\""}],"}"}],",",RowBox[{"{",RowBox[{"\"a\"",",","\"f\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"a\"",",","\"g\""}],"}"}],",",RowBox[{"{",RowBox[{"\"a\"",",","\"h\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"a\"",",","\"i\""}],"}"}],",",TemplateBox[{"874"},"OutputSizeLimit`Skeleton"],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]\"",",","\"m\""}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]\"",",","\"n\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]\"",",","\"nj\""}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]\"",",","\"o\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]\"",",","\"p\""}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]\"",",","\"r\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]\"",",","\"s\""}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]\"",",","\"\[SHacek]\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]\"",",","\"t\""}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]\"",",","\"u\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]\"",",","\"v\""}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]\"",",","\"z\""}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]\"",",","\"\[ZHacek]\""}],"}"}]}],"}"}],Function[Short[Slot[
+1],5]]],BaseStyle -> {Deployed -> False},StripOnInput -> False]},{GridBox[{{PaneBox[
+TagBox[TooltipBox[StyleBox[StyleBox[DynamicBox[ToBoxes[FEPrivate`FrontEndResource[
+"FEStrings","sizeBriefExplanation"],StandardForm]],DynamicUpdating -> True,LineIndent -> 0,
+LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLText",StripOnInput -> False],StyleBox[DynamicBox[ToBoxes[FEPrivate`FrontEndResource[
+"FEStrings","sizeExplanation"],StandardForm]],DynamicUpdating -> True,LineIndent -> 0,
+LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False]],
+Function[Annotation[Slot[1],Style[Dynamic[FEPrivate`FrontEndResource["FEStrings",
+"sizeExplanation"]],DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},
+LineSpacing -> {1,2}],"Tooltip"]]],ImageSize -> {Automatic,{25,Full}},Alignment -> Center,
+BaselinePosition -> Baseline],ButtonBox[PaneSelectorBox[{False -> StyleBox[StyleBox[
+DynamicBox[ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeShowLess"],StandardForm]],
+DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},
+StripOnInput -> False],"OSLControl",StripOnInput -> False],True -> StyleBox[StyleBox[
+DynamicBox[ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeShowLess"],StandardForm]],
+DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},
+StripOnInput -> False],"OSLControlActive",StripOnInput -> False]},Dynamic[CurrentValue[
+"MouseOver"]],ImageSize -> {Automatic,{25,Full}},Alignment -> Center,ImageSize -> Automatic,
+FrameMargins -> 0],RuleDelayed[ButtonFunction,OutputSizeLimit`ButtonFunction[OutputSizeLimit`Defer,
+5,29094477859246327743,Times[5,Power[2,-1]]]],Appearance -> None,Enabled -> True,
+BaselinePosition -> Baseline,Method -> "Queued",Evaluator -> Automatic],ButtonBox[
+PaneSelectorBox[{False -> StyleBox[StyleBox[DynamicBox[ToBoxes[FEPrivate`FrontEndResource[
+"FEStrings","sizeShowMore"],StandardForm]],DynamicUpdating -> True,LineIndent -> 0,
+LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLControl",StripOnInput -> False],True -> StyleBox[StyleBox[DynamicBox[ToBoxes[
+FEPrivate`FrontEndResource["FEStrings","sizeShowMore"],StandardForm]],DynamicUpdating -> True,
+LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLControlActive",StripOnInput -> False]},Dynamic[CurrentValue["MouseOver"]],ImageSize -> {Automatic,{25,Full}},
+Alignment -> Center,ImageSize -> Automatic,FrameMargins -> 0],RuleDelayed[ButtonFunction,
+OutputSizeLimit`ButtonFunction[OutputSizeLimit`Defer,5,29094477859246327743,Times[
+5,2]]],Appearance -> None,Enabled -> True,BaselinePosition -> Baseline,Method -> "Queued",
+Evaluator -> Automatic],ButtonBox[PaneSelectorBox[{False -> StyleBox[StyleBox[DynamicBox[
+ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeShowAll"],StandardForm]],DynamicUpdating -> True,
+LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLControl",StripOnInput -> False],True -> StyleBox[StyleBox[DynamicBox[ToBoxes[
+FEPrivate`FrontEndResource["FEStrings","sizeShowAll"],StandardForm]],DynamicUpdating -> True,
+LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLControlActive",StripOnInput -> False]},Dynamic[CurrentValue["MouseOver"]],ImageSize -> {Automatic,{25,Full}},
+Alignment -> Center,ImageSize -> Automatic,FrameMargins -> 0],RuleDelayed[ButtonFunction,
+OutputSizeLimit`ButtonFunction[OutputSizeLimit`Defer,5,29094477859246327743,Infinity]],
+Appearance -> None,Enabled -> True,BaselinePosition -> Baseline,Method -> "Queued",
+Evaluator -> Automatic],ButtonBox[PaneSelectorBox[{False -> StyleBox[StyleBox[DynamicBox[
+ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeChangeLimit"],StandardForm]],
+DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},
+StripOnInput -> False],"OSLControl",StripOnInput -> False],True -> StyleBox[StyleBox[
+DynamicBox[ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeChangeLimit"],StandardForm]],
+DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},
+StripOnInput -> False],"OSLControlActive",StripOnInput -> False]},Dynamic[CurrentValue[
+"MouseOver"]],ImageSize -> {Automatic,{25,Full}},Alignment -> Center,ImageSize -> Automatic,
+FrameMargins -> 0],RuleDelayed[ButtonFunction,FrontEndExecute[{FrontEnd`SetOptions[
+FrontEnd`$FrontEnd,FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}],FrontEnd`FrontEndToken[
+"PreferencesDialog"]}]],Appearance -> None,BaselinePosition -> Baseline,Evaluator -> None,
+Method -> "Preemptive"]}},AutoDelete -> False,GridBoxDividers -> {"Columns" -> {False,{True}}},
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},GridBoxSpacings -> {"Columns" -> {{2}}},
+FrameStyle -> GrayLevel[0.85]]}},GridBoxAlignment -> {"Columns" -> {{Left}}},DefaultBaseStyle -> "Column",
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},ColumnWidths -> Automatic,
+ColumnAlignments -> Left,RowLines -> False,RowSpacings -> {3,1}],BaseStyle -> "OutputSizeLimit",
+FrameMargins -> {{12,12},{0,15}},FrameStyle -> GrayLevel[0.85],RoundingRadius -> 5,
+StripOnInput -> False],Deploy,DefaultBaseStyle -> "Deploy"],If[SameQ[29094477859246327743,
+$SessionID],Out[5],CompoundExpression[Message[MessageName[Syntax,"noinfoker"]],Missing[
+"NotAvailable"],Null]]],StandardForm],"Output",CellLabel -> "Out[5]= ",ExpressionUUID -> "4466d74f-1344-41ac-bda8-d9a2cc3ca0cb"]},
+Open],ExpressionUUID -> "2c232cac-5219-441a-afa5-b6ff36d6b3bd"],Cell[
+BoxData[RowBox[
+{RowBox[{"zlaczone"," ","="," ",RowBox[{"Table","[",RowBox[{RowBox[{"StringJoin","[",RowBox[
+{"pary","[",RowBox[{"[","i","]"}],"]"}],"]"}],",",RowBox[{"{",RowBox[{"i",",","1",",",RowBox[
+{"Length","[","pary","]"}]}],"}"}]}],"]"}]}],";"}]],"Input",CellLabel -> "In[6]:= ",
+ExpressionUUID -> "233254f3-65fe-4f3c-8148-ab5383342bd2"],Cell[
+BoxData[RowBox[{RowBox[
+{"liczby"," ","="," ",RowBox[{"Table","[",RowBox[{RowBox[{"Length","[",RowBox[{"DictionaryLookup","[",RowBox[
+{"{",RowBox[{"language",","," ",RowBox[{RowBox[{"zlaczone","[",RowBox[{"[","i","]"}],"]"}],"~~","__"}]}],"}"}],"]"}]," ","]"}],",",RowBox[
+{"{",RowBox[{"i",",","1",",",RowBox[{"Length","[","pary","]"}]}],"}"}]}],"]"}]}],";"}]],
+"Input",CellLabel -> "In[8]:= ",ExpressionUUID -> "bece181c-af98-442d-8358-66290a613026"],Cell[
+BoxData[
+RowBox[{RowBox[{"a"," ","="," ",RowBox[{"GatherBy","[",RowBox[{"pary",","," ","First"}],"]"}]}]," ",";"}]],
+"Input",CellLabel -> "In[10]:= ",ExpressionUUID -> "31ff4142-c701-4bf3-ba16-31389388defd"],Cell[
+BoxData[
+RowBox[{RowBox[{"wartosci"," ","=",RowBox[{"Table","[",RowBox[{RowBox[{"Table","[",RowBox[
+{RowBox[{"Length","[",RowBox[{"DictionaryLookup","[",RowBox[{"{",RowBox[{"language",",",RowBox[
+{RowBox[{"StringJoin","[",RowBox[{RowBox[{"a","[",RowBox[{"[","j","]"}],"]"}],"[",RowBox[
+{"[","i","]"}],"]"}],"]"}],"~~","__"}]}],"}"}],"]"}],"]"}],",",RowBox[{"{",RowBox[
+{"i",",","1",",",RowBox[{"Length","[","alfabet","]"}]}],"}"}]}],"]"}],",",RowBox[
+{"{",RowBox[{"j",",","1",",",RowBox[{"Length","[","alfabet","]"}]}],"}"}]}],"]"}]}],";"}]],
+"Input",CellLabel -> "In[13]:= ",ExpressionUUID -> "b1768033-6111-44d5-9397-b126f377444a"],Cell[
+BoxData[
+RowBox[{RowBox[{"epilog"," ","="," ",RowBox[{"Table","[",RowBox[{RowBox[{"Text","[",RowBox[
+{RowBox[{"liczby","[",RowBox[{"[","i","]"}],"]"}],",",RowBox[{"{",RowBox[{RowBox[
+{"dl"," ","-"," ",RowBox[{"(",RowBox[{RowBox[{"(",RowBox[{"dl","-",RowBox[{RowBox[
+{"Flatten","[",RowBox[{"Position","[",RowBox[{"alfabet",",",RowBox[{RowBox[{"pary","[",RowBox[
+{"[","i","]"}],"]"}],"[",RowBox[{"[","2","]"}],"]"}]}],"]"}],"]"}],"[",RowBox[{"[","1","]"}],"]"}]}],")"}],"+",RowBox[
+{"1","/","2"}]}],")"}]}],",","\n",RowBox[{"dl"," ","-"," ",RowBox[{"(",RowBox[{RowBox[
+{"(",RowBox[{"dl","-",RowBox[{"(",RowBox[{"dl","-",RowBox[{RowBox[{"Flatten","[",RowBox[
+{"Position","[",RowBox[{"alfabet",",",RowBox[{RowBox[{"pary","[",RowBox[{"[","i","]"}],"]"}],"[",RowBox[
+{"[","1","]"}],"]"}]}],"]"}],"]"}],"[",RowBox[{"[","1","]"}],"]"}]}],")"}]}],")"}],"-",RowBox[
+{"1","/","2"}]}],")"}]}]}],"}"}]}],"]"}],",",RowBox[{"{",RowBox[{"i",",","1",",",RowBox[
+{"Length","[","pary","]"}]}],"}"}]}],"]"}]}],";"}]],"Input",CellLabel -> "In[15]:= ",
+ExpressionUUID -> "2ae9c92e-b2f9-4026-bf2a-98fc5d079371"],Cell[
+CellGroupData[{Cell[
+BoxData[
+{RowBox[{RowBox[{"osie"," ","="," ",RowBox[{"Table","[",RowBox[{RowBox[{"{",RowBox[
+{"i",",",RowBox[{"alfabet","[",RowBox[{"[","i","]"}],"]"}]}],"}"}],",",RowBox[{"{",RowBox[
+{"i",",","1",",","dl"}],"}"}]}],"]"}]}],";"}],"\n",RowBox[{RowBox[{"podpisyOsi"," ","="," ",RowBox[
+{RowBox[{RowBox[{"Style","[",RowBox[{"#",","," ","16",","," ","Black"}],"]"}]," ","&"}]," ","/@"," ",RowBox[
+{"{",RowBox[{"\"Druga litera\"",","," ","\"Pierwsza litera\""}],"}"}]}]}],"\n"}]}],
+"Input",CellLabel -> "In[16]:= ",ExpressionUUID -> "f2a046cf-1b3e-4337-ab57-4d464e2f0c0b"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{StyleBox["\"Druga litera\"",16,GrayLevel[0],StripOnInput -> False],",",StyleBox[
+"\"Pierwsza litera\"",16,GrayLevel[0],StripOnInput -> False]}],"}"}],StandardForm],
+"Output",CellLabel -> "Out[17]= ",ExpressionUUID -> "d8bc7725-b82c-46f7-9198-2c37e555332b"]},
+Open],ExpressionUUID -> "dc919d5f-eb4e-4fe5-aa8a-25cf2ae47a03"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Jeden"," ","="," ",RowBox[{"MatrixPlot","[",RowBox[{"wartosci",",",RowBox[
+{"Epilog","\[Rule]","epilog"}],",",RowBox[{"ImageSize","\[Rule]","1000"}],",",RowBox[
+{"ColorRules","\[Rule]",RowBox[{"{",RowBox[{"0","\[Rule]","White"}],"}"}]}],",",RowBox[
+{"ColorFunction","\[Rule]",RowBox[{"(",RowBox[{"ColorData","[",RowBox[{"{",RowBox[
+{"\"LakeColors\"",",","\"Reverse\""}],"}"}],"]"}],")"}]}],",",RowBox[{"FrameTicks"," ","\[Rule]",RowBox[
+{"{",RowBox[{"osie",",","osie",",","osie",",","osie"}],"}"}]}],",",RowBox[{"FrameTicksStyle","\[Rule]",RowBox[
+{"{",RowBox[{RowBox[{"{",RowBox[{"14",",","Black"}],"}"}],",",RowBox[{"{",RowBox[
+{"14",",","Black"}],"}"}],",",RowBox[{"{",RowBox[{"14",",","Black"}],"}"}],",",RowBox[
+{"{",RowBox[{"14",",","Black"}],"}"}]}],"}"}]}],",","   ",RowBox[{"FrameLabel"," ","\[Rule]"," ",RowBox[
+{"Transpose","[",RowBox[{"{",RowBox[{"podpisyOsi",","," ","podpisyOsi"}],"}"}],"]"}]}],",","  ",RowBox[
+{"PlotLegends"," ","\[Rule]"," ","\n","    ",RowBox[{"Placed","[",RowBox[{RowBox[
+{"Style","[",RowBox[{"\"Liczba s\[LSlash]\[OAcute]w w j\:0119zyku chorwackim\"",","," ","20",","," ","Black",","," ","Bold"}],"]"}],","," ","Above"}],"]"}]}]}],"]"}]}]],
+"Input",CellLabel -> "In[18]:= ",ExpressionUUID -> "d34035a6-2d01-4b92-aeab-927fb55bea24"],Cell[
+BoxData[
+TemplateBox[{GraphicsBox[RasterBox[CompressedData["1:eJztXHlUT2vbTuWIoplKE00yFBpU5EqJzKcBmUVIIUpJRAOp5CgyhjJFIdKAUpIUJUWjxj390kiURCd9+13f9/25W2+tn/ec831aq3W1Ws+697PvfT/Xc933/ew9ZoOrzSYhAQEB5f/5/dff//3Thl/4C/8v4GJVE0F390rMnOvWdkroDfaKeBmtWFqPrxuH8ehWCoeImQYxiylELTZ6kqfSyrfrutItHzoIGkc9GtIml9K40Zijv1Sj//Ylgi+pqcjT2HL8u7FiBIVPvuoiuarcdjQVTne3C9IIOfxHoc9OCnRUWqxlH+OHNOz+8IcTjXGF98wypGnopq85d3psK4xaF14Se8/gksMdsUXePDQqkQmLJ7Sizccyfpg+D0416omDOnnwvxfSKz6pFfKT/Y9rx1H4uL7KsoQkcbnMwB/K3Nf9rBNPLDzHwNlrrKFDD4OLeV3fgrRbIRMm//5IEHu/PVPMlObScB1lrmOtxm3n+tsd7jUKDFJGW9ycPpWBX2a72g1N7vFdgjZkxBsaLsenRex/TKMtxmhftzr/nnuWnZ44JBjYi8q3TxjDQN7RauJWdj61253yp3VRGOLlYDJzHQX3H5OEh/TxXLhwhM2+t/qBJLLj7GQ8O+twpffTfoP1LX/5Ovt3sa6yK2a8GYnPrskP6wXrEKY4zDOrp5lv9rUcemebJxBYNK9z0mfJGnTeWHeH0m9GtNhdw8UWNITtI9fS5RR6LBX108dw+z8+yVZ37kYa5oGKa81FaZhGC7zcM5Z/ccKFo0PbwzSPkYC03fDFQwgY3o+y6drK/XzHBZxpEd9K4vywk+pK4XWIVLk1f+a0Fs512t/5bGwYTSnX01j8dG/G/hoa4U9nLXcfAI/1FxV9p2YotlMoj3ujNWw5heHzrhk1svw8s416Rtsx+O1J9G7P4ww2Vgs+/abV//lsI54FjZSg8MBXaNKcJgKDYerwWIF/9/W90v+WVguDQh1TFT9/HpYUO/tsY/mzZaXWSLdaEgJnJl+8EUGw+0SZq2l1C+Y3JxY9WsJgtru42/gjDPYKB12qYu+rXe2WZ1o5A4nvPSX3HHh40GOx5Mv4VvROtuRV6TMwkFI+3LuKQdS6SaUz2fEoF12rrUrh/tKcCHlhEs0q8joKo1tRqfTwwuy7FJR1XOxFmkgMCX2yaA3Lz9nJ0bWm3TR4TJ7Vtl4aKwxSzn5gn+/n0/HRPhEkpF9Zm0jKEJikMfvEvN0tuPugOkmLpiBYLBm92ZSC7p04+VD2ueiEiV/+qMODkcSp6IJWHhS7BfQ/T2T3hQVljw5fYpBhnjzu+WAeRJ87ut9geX5eYt7MJY0Eyu0i5KpLauAiWVF/K6AZa3I6VKQ3UrBqlHG84EriflJzbLRiKyJrXY7u66qDb5fT5D0XKiFo2Omzy7CJ0//yiyWsDvuQEB+n/GZWRR1s8o1FBOy419H70847489R6JQdsXhFLglV4Sy7OqVW6L9bubA0l4Dbs2Ift/U12DbLveCiHTdfRQb/FhxTQSDt6tKs1vM18N2avnTWNv7x289GtaHLHx/ZRWBvwUWVpfrVKPXcErW4itvP/UWN8NeOGkIUJuppHNhTQsBq7PD4YvFWNEZKROqMZ2AZ8LmufD6DJCIsUICN517tg61jIxjETgzXk/3CIPGzT7kzGz+mM+YRQ9j1v3fdoDEku84WmXaILtLmXr9Tt00KbLjJoMT+nZLHSB4czywQZ/oYz4VjTtZMxn0Sm+IU5V7PJbA74dV3xUvccbV/i5te7OA6OLpGF1l0VuDiOnu1l0cb+ebPh4rWd9ZPZ/0ZnzmmRJdE9UmFQY/Y9a73JGGH2FUaIlsUjj3cRWNK65fW5j501C/8hf8fUEdIJF6ErsXvDoolI1IrEL9BSNzdnXs9jlIdM6QwmIHmqR06PgyDOvOgEzoD4A1+6bHVr6NmHMgkkGNdodYypwa7X78+tnB+M6dO4LLDpTe8Gn84iU4kkPegcXCieRWsS65/u7K3CVFOykMCD1AQmyGbkBJJIvF+QoUZuz82nsLoSfoE1soaDPm+tgoyL6YNlzzchGDtD0WjHQio0890TLqroCUu42ec3YQTZ0gBz5UMcnxnDHE+y6DhuuxshXGtWL7CWLFzCgkthaBC3ze1kH+wpDqvsRlv3c5kOPRQePHs84yQLRTWlN3U1GDzpu1X3p0s0eZhqMXgP87xeEix3ONUwuqNB6FdWb+Vk1grdUX/6RECG+6dTyp804KJq6Ty/EYRyBQ0peZ2V+KI08HM7NVNaLLWicMwNv8P2tlVRBAQWtrkXSjPbZ/Ln0eypB59GlsLy9uDuiW2laP+cdJ6t5YG2MULjo6Pr8Oe3/OvqytWYsbrM90nBJuwIiLhdtMi1j+w6dj/sArJjoN8ENv/ffbz0iqthjlVEMwOSjVzf4snSh/COxvr//J19u+iu8IZh2T3GrRI+Uo5TC9DUUrl8Pm7Gvhm/4XGRg/7OayuS273dJ9FYtWTbYLfRv9z9sGrod2uCetJmNVT6YK72fyu2Trbe8LPz/cPkFe9ZER5yPW8OnNKEg/zMld+UWXjP0R3ernsUxI3Eo0bz7Pr+9goy11d91s460Vcdriua6Y+6/HZV7VIar5/W/RkBcom2GrFb+TmZ37xKr/snCq23lI0h4BpRFrvy6gqfJuifs8iin/6eZzArkapRwQOWaXZqEyqgVPkibe1aEZq25EPd8tonF+dG3Mvm8ay1Vlz5DW463VaY1Uj56oROHAxfIGRehVa65YOtd7eBH9717b9Z2mYln7KzVxPY1Hi9EXxatx2WusSLll/YhDm/XpMQQgPJrd4USETuP32YbfLk3z3MlYPDznsqZIN3Rz3QU2Hac7xnuSQ97a5b7FGcMFQRcc7SD1k4fqpjeVNZ+OQtjU08jICj8YL0shdf/+yfR/1Gfvn+6Kq2PzT7bbEwoJbPFQ+/7BPkI3DRwkzisSESFw4kDB4nU4tROMvL6u8wb98TTBd/OR8WR40JZ9tPJfNg+yEHaGr2euWH6Fls9Jr4Uadqpq5twIvu0ZuM1vRiHtOrVJq2jQKeWkJ5Xco2EL8gHofdSouXFUTckWupQYVbk0rE8XKYTLsT8365/3nVa68/o/gaEs7Nk8zmeR198ABBgevWKk+ZvXDpzg3wVleFNyObqm9Gk7ix3xrc0VWJ2zOvObbpcKgvuFtqqsJg/cePh+zNbnrBp69I8M/kQxcI5S+y7nxEOC0vH4yG1fh0830UwsJmK1Mla/fV4PPHaY7UtY1Y4uIZm+IPY1Mr48vBL9TKPjhpmbcRzyMf+ChnHyNgs0F85MS70io2Qy+o6Lcin216d15VTReai9/xLyi8VhyodS0AdS74tY1+JttrMNsxeuBP86+g1V44Y/jBY2ISxyxfvYLEvUlslGjdhBYMyz1kUR6C2x3qrwVi6qDmfVvfl8FKpFX6Vh2+is3722+6y65eiibP1/r8pfNq0TmDqKbtGri9GdwXbT0hjIKgXvumZDjKKTYaoTPUmlFpPX540NH0PAKyRZe5E/BWaLNPrCPujSX/f76569CftUPufBa/s196t4MtA1TllnnM4iwna1ZPO6f4x8uvvqr5nP47L47vio8BN6iggaV8kCe8lM7y8f5VO+MFolc+A4/kirjaga/RmONvNyYQN5Pvy9+6Y3qg40dUhKVuCRiEfVqWRGmTkiI9xPnn/7XuLOr1CWZQgQpu6C5nURSvKmhH8uTmfp+OfLpNBSqO1dERNIojlftDFDn5vOf7U8uvGaSFya7hISEguTbHMM6ZJgrOKVK9V8/8+t57b6X9zXAi8aPmJ0vHCbRGL5i+cN2PvaVTj593uG2sRapwgo/jKrLsVn/9PAX8o18m//PxomjY1U02Tz8zOyIYYOSa3B5dXhovif/9FiTfsKTnukETst8n6DlXYXANOepw8OasIgQme56h4ayz0x/J38awU+qg8f10RcumkuJ3mqgMHnkbXNzNr+cYvfK8ja7n3pfxvuXjgzmya0TE4xlkL5UNHjZOG79/LZkfYykMwNdh/YPPgkM7ro5rfDoY79I6TwdUbiUwOdSo7C24ipMl3ulZJ/EnV9k0doLNJ5SyFu2uujpbxTqz7++/LyPvnx/cXd1fXRMCwnerNzwlXcI8KzChxq08S8/JRkifF8nA5ucderyJ3lQD1ifdbOP/OLvhk8/Epfj1WjojVHrlb5OoTS19qbwAPT8/1X/mBW+O6wrwUOnhZ71psc83PVgMmf+hfvFoO+T71HVFJzGOhbY6lHwtpwfsIWP54IEfALH+cqQiBptJjTCpRaZZbFpDpnc/PZ3421be2k5Lx6JGNXmqppoArLLFJ8q1vNvve8yTO4ljxF47Cfu1Hq6GlJlmT3jhJox3TKh81khCTsNA4sx+wgc6DnWdj7373fuRWtTTXtDJInk34krX1UJmNj7Lnpw4K+bZ/aosamGhmxet0FXJUiLxOe0qNrzfKx/JrtcdFcyqsW4TWu3EmHlUGqPcbHtbvjbxS0Xeq65RMdcZPWYakCe2FYa046muL7iY5/U+M3sIw+tKWTqTVmdakvCs3qZ43TF/tt3K9W8dv8UgQ7fklCF+9U49LJ9rMaIZrQb7K4YbMKga83dIwtY3REy7ebX1Ww+m19d0JSfzkDNX71B2IjV4X7dHWvGt+K44e4pe1wZGN8ISdBOZRBbcqM8gtUbUw09tka/ZUBO3JG1fwUPv1ulBpSz4/90mffGIL8K+ycJlc9fUQxv0UFHPs95zznPEup0/sfxdZj9QfOl9LR38H85O6f7eiNEFRaFbSlgELqhqlDOmgdq0eJhj/roT3Fhd6lOgOlWAo/MxCf7japGs2BMxI3CJszSc6ev51MQdg64fnkUhTn3zzQLDoC3+ZUv/FUoPa0g72A7geej5ukt6KrBjCPFR36EN/d7PXKN5/r/z877+MUnXOem/tPP6X/xxkKXC3UiNFJm6gkO8qbga+Rh6DSAc6H99RtXPZxf1xW5MOKtsw57Xzq/R9imULBcvW2xBR91Lxc2vXnxwFOAgdHdNdOLhjDI1R0rNVyTO265/s/Vtwq8INERtY5B0KuCoSnRDIp9wjYbsfy5ourdXMubNFZPuXNQ0ZtG1HuHLcP6yB8vVqr3+D0isfNM8NAddgTsHd9lWN9sgfqFj+I90bUwSG8ZaTy3ArkZ9/RFLBsxSlb5oukLBnkj5xe8suKhy6P4/XmWP3cd+OpVcJXBtaPzRGeN4KGHfGqRo93KWTeLi5gnVdVG4/XrGNvHH2gIbCz8M0GjFbNp77wA8VpQniNvWc0vx/Hcudfzarn7BcM+nqm595BBR1JEaZEuDyn5u7TN+uBzrnNcTv5l4dmmNXiV823JmZpSzJisL+2wgPu6u3aq+VybTCEu+mRohDKJbZ9DV3n/B/q5/OKfc5sjrrQWUWi8PypISZWCUWFH2hg+5hcn/2x2WCJLQXTBaZW4zwTcjWMrKwdwrjVttOnlzc00pg4bcbmLRyOg9pLWCQ3u9wK44q2/5yhEtHbmTomioL7iZpt+EYkxt2jfXiXu/cX7tcyWR8EUVGcuzkm+Q8Lc6YWBv1L/r8u1vkL3eLdEG9GQeen6KC2HglTuQd4BlsemDZN3bhjGgLAIUD0rx+Cq+nfh+X28d8CFXwbFrn23nMQq/a2hs5bWYew0Z3sxlZ+vN/hVN/C2epS2255Cc0VTfOhaEvPtze5vGIC+5UIZB62sLhuWpx7YGop/omBlsD5abgD10jNv8gePVCHhX3JhV83xWnwVu5BjXtiM0kbxw9e7GUhLfdLcFMnDiFVVTA7rh4Q0T+WtiQxGbBNot9PiITteZsUYNh4iix++8FCmUbcsTOzeBQpbMt1069n9Ol/XpvjjAxr2YZuWW52k0Vh2vXgTy/+X8z+pSV8mkK7hdyXuXTUO+xYPUlPmzvdttXa+FGysAxX23D/MrxIxgqtKwifw7/yA2ypt58ztLO94mQ3N9iVxSS+oq5Z9Xgp+f5QV7GaQsEP1UHoWAxWZzh+JA+hbrd8imXxbgwJxdv20L2IkWnJMVpr8g87b5AXPrjusR4Ppros5kkHhlmSnvAMfdUv91aZLpAKFfLGp9y92E/gm+HhNN8vPz+Isozcp8LC01saz4BUP+4ivy7374CsPrfqctbk0RL+McpW5TUNthgbzZADvMfV3X4t2JCPurKFgdtXncttmEg9tbk/w62O9by+2WEn/QYEMrnsxKIXERDML+2gl/vmza/jSBZrsens+fPWXifY0yt1bNY7/B845c9Ut+aUTzh/aZTPekoEXWX97qieDU3kFPRcHkKdw7pscfQq/sQ+K9bNozIsN3PbiKg1jx7inl9m46u/9zglMSI1U5yHZyy3SoIYHqwWiH5PZ8ely5qUrtUn8pusudDKxFtXmunRCTTOUk8ZP0nGi4JVyzbNoDwk5Zw+PjD7iiuv9zSWRTiOFZWgYZTlrNRylcDT//IzYAeRTTZvu2UxypxFYV/mlQJ3GGfmh4SXsvuOhSK8uGMzgnmf7cEcJBqauO40nsvv+9NuzMjOP0UjLzZ7qt4RGjWT8Ddc+4jB7XtDeju2svpK1EnJWpKGtcnFUCmt/XHzlMWkNBiNTNhRcNWewaMKQNIq1r3q0qX1NAI3rCdGmb2bSOIxcUT3W/t+tX/8Lf+Ev/IW/cGCosHxZjN6fJKw9ur0dXxBIdl1XIfHbP4fPp9i903WSr0Nn8esR5+TeQam0ozT2XP/fd+PSFQtNwxP10usQPP56kKNBJVT8rj3JFWvCsl7paScX0ejc+dh9YwOFxcWqY7/1odvTU+ZOQDyDhaqubSIqPLwrO2co1Ef9ims+6hIfY6WfMRia/zDP14zNHy/ZP9/fh539h/frF76twQU79eI0ogxfrKP/UE3irndd/802LnoYCbEHks8fWtXCzGH4UL/7/DsPc3uMb3SIGYUP36zVVY1I5LicUitn87U3M18FHe0gsfBY6jqZNAIuf66KW9T9z+mD/MJf+At/4S/sGw1lFUv2vqJhknXDzyqJRsin+Ls16vyrY3Ahv+zLzcJkg4UUTrSdflQ7n8RuAwOj0XysP6t2uITuiCORNz718DQTAoIZ50pVT7bguvT47yn3aQjnvHVkQmjsqzZeOZeP3xFKkiQDyqoZIPfYe2YrD0qJBQrSA6jPc9nh8n+cy9YusTQK9WMSCzpZHZp+fpbEFT6eF33S0jv3yCEGZgsrFwxi59WqMSFLXLsVQi+c34ztpJEyarqh0Vcanw9OLCgawHs3Bw6GmGzZR0Bs6qs1ccuqsaxFyEa3kX/1cy7k6ov1186SZbMNmmMJXCn/XuzSVY0f+mnbw8fzT+8pKJxzkDAmIfpcOVuvqRYljRNjc9qb+/3drWYNU2OhqyS0YiYoWU8i8CVkjUJiUAsqTk+3FDdjYCWz/PyP7Qx0ZGdP9dXiH5+QMX6Zyd0EPoml3KqQqYX09J6RwRe5/VM4Z6vIhEMEVi5Ul9PwqEYaYWvu94V/8RD0eHvCYE8S+kfqgnQy6jC5YtMbj3k/XydznWM5U255IlOAB4s6X+NzV3nYLbHpHjOAOOSqf/bXDtd33mjGaHOWLIPAxYmnhoxnMFrU2T5YsxUFdHNKvg8N3kfhWzUGNHo9koKk+ojD/p7fOLvH2uKbG4VQ8+JurWA2r9Lp2NXD7hcnP7ro/ev7eoZ2bmmbMkicN7n7JqOPPvKhN+vszXIodKm1UF9GUFj4u/12muVJYq/zgu65JLRdvWuklesgKGEamSHCHQ9c9fnVeVNONAdQGOl/233DNRK3ZT4tW8/OR85UMGP1BArZy3tj5UaS8C7VPbqKzdeYuMhbDaY0vksKX5hWSEGYqU6+2Ef+e0qyVtvLikbO1YkOugSFBqUzy6rY8Vz9wZgeNc0IXQZLXgZfCbBlcMe8SFiVjbfNj2qDcJDBSqE5Ww8XM+gWef2prY++4X8BYt72kw=="],
+{{0,0},{30,30}},{0,1}],Epilog -> CompressedData["1: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"],
+Frame -> True,FrameLabel -> CompressedData["1:eJxTTMoPSmNiYGAoZgESPpnFJdh47EDCLb8o1ym/Ig0kU8wBJIJLKnNSgSLBgkCOUkBmalF5cVWiQk5mSWpRolKmAFA0jRGkmBNIuBclVvqklqXmZDKAxOF2BJXmpBbzgE0ryizwz/PMKygtKWYF2ZeYU5xazA9khRQlpmSWZObnJeaAHDFonURKmPGBHOhSVJo+SAKMnu4BAOv2l8A="],
+FrameTicks -> CompressedData["1:eJzt2DtLw1AYxvGDBlQQBAcHh0IrIiJi4qXVqiiiTk7q6JJaq9G2kSSKOPlR/RiOJhEc5H3K88ZN3w69wq85vZzzP6l34vPemHMu9fKrsyjNfjyq4dcSV1ze9g+/np7Ir07jZHAUv1yM5/cbYSOdyW8vk7AbZVE8DPvFy6Kxh4wOb+wi45o32oIxWRhXbT/wj3loZyTU4qFtNKoub7QEY6o0iqNpnfBSc9SwgoCHttCwbnhjExk93thAxi1vrCPjjjcCZES84SPjnjbcGjIeeGMVGX3eWBEMrzQUg1lGBzLgjSVkDHljEQ1mqBjMAjqQmDfqyHjkjRoyEt6YR0bKG3OjpqImPxW5WXQwGW9MI+OJNzxkPPPGxwEwXnnjXTC+P1i0WFgmWCZYJlgmWCZYJpQXywTB+PeZoDy3IL6JMhrwYPlowB86Hw3il18lGsRfYpVoEP8bymgQ/6OVokGcMapEA56++GjA0ygfDeJ8rowGvK7w0YDXNz4axIVWGw1wwVdEAwwPPhrEANJGAy4xPhpwEfLRIJapNhpwIvPRgFOdjwZx36CMBnEXo4wGcTdVJRrE/Z0yGsTNpjIa8KaXjwa8+eajQTwJ8PtzC5YJlgmWCaJhmWCZ4CwTLBP+fCZ8ArTkJMM="],
+FrameTicksStyle -> {{14,GrayLevel[0]},{14,GrayLevel[0]},{14,GrayLevel[0]},{14,GrayLevel[
+0]}},GridLinesStyle -> Directive[GrayLevel[0.5,0.4]],ImageSize -> 1000,Method -> CompressedData[
+"1:eJylUttKAzEQrfWGeEGkT775DX5AqVarYGXpFt/j7qQNppkyk0Crv+GL/oEv/pPf4A+YWdHWZVsRA1lOdnLOnBzm6BZ7eqNWq/Fa/FwZ9rr+deoFC+l2BK2J4UTluXEDvSJVIaSZspDTQ+O183b/2CzRGhG0Qatg/QkGlyuapn5qgbdEL3gcKW+yEulwRuqQGg9NxpfOA6nMG3R6dYnNzQhugDjeo+NivZctHUTQj1p3XQwMCbIpVOvzqgXoUwBej+BcWYaKRmdaQ+Z5qSF554UZDG3c/jO1BTelE8U00Mj/UnFvXiZB4/6hJZbahGNrHPDPd1dEpQlAI41OAzFSF3P4DqdCd2xVBiNwfqmuWJ+kElvL2oraNJXjNbpyi/3ZZCQW/e+jtCuEWDHuj4O7I0C5ASziPT/Jeml+ACDqxdw="],
+ExpressionUUID -> "36f9fea3-db65-4d5b-a9e7-7fef35e26ffd"],FormBox[FormBox[StyleBox[
+"\"Liczba s\[LSlash]\[OAcute]w w j\:0119zyku chorwackim\"",20,GrayLevel[0],Bold,StripOnInput -> False],
+TraditionalForm],TraditionalForm]},"Legended",DisplayFunction -> Function[GridBox[
+{{ItemBox[Slot[2],DefaultBaseStyle -> "LabeledLabel"]},{TagBox[ItemBox[PaneBox[TagBox[
+Slot[1],"SkipImageSizeLevel"],Alignment -> {Center,Baseline},BaselinePosition -> Baseline],
+DefaultBaseStyle -> "Labeled"],"SkipImageSizeLevel"]}},GridBoxAlignment -> {"Columns" -> {{Center}},"Rows" -> {{Center}}},
+AutoDelete -> False,GridBoxItemSize -> Automatic,BaselinePosition -> {2,1}]],InterpretationFunction -> Function[
+RowBox[{"Legended","[",RowBox[{Slot[1],",",RowBox[{"Placed","[",RowBox[{Slot[2],",","Above"}],"]"}]}],"]"}]],
+Editable -> True],StandardForm],"Output",CellLabel -> "Out[18]= ",ExpressionUUID -> "7540ea40-91ae-4189-ad24-e026f2a24226"]},
+Open],ExpressionUUID -> "de036186-d6ce-4c32-8408-8e07cb34dd77"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"cloud"," ","="," ",RowBox[{"Table","[",RowBox[{RowBox[{"{",RowBox[
+{RowBox[{"zlaczone","[",RowBox[{"[","i","]"}],"]"}],",",RowBox[{"liczby","[",RowBox[
+{"[","i","]"}],"]"}]}],"}"}],",",RowBox[{"{",RowBox[{"i",",","1",",",RowBox[{"Length","[","liczby","]"}]}],"}"}]}],"]"}]}]],
+"Input",CellLabel -> "In[19]:= ",ExpressionUUID -> "4aba4df6-42dc-4a2e-943d-5c2f0c5e6d98"],Cell[
+BoxData[
+InterpretationBox[TagBox[FrameBox[GridBox[{{ItemBox[TagBox[RowBox[{"{",RowBox[{RowBox[
+{"{",RowBox[{"\"aa\"",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"\"ab\"",",","136"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"ac\"",",","15"}],"}"}],",",RowBox[{"{",RowBox[{"\"a\[CHacek]\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"a\[CAcute]\"",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"\"ad\"",",","255"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"ad\[ZHacek]\"",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"\"a\:0111\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"ae\"",",","58"}],"}"}],",",RowBox[{"{",RowBox[{"\"af\"",",","150"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"ag\"",",","246"}],"}"}],",",RowBox[{"{",RowBox[{"\"ah\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"ai\"",",","1"}],"}"}],",",RowBox[{"{",RowBox[{"\"aj\"",",","11"}],"}"}],",",TemplateBox[
+{"872"},"OutputSizeLimit`Skeleton"],",",RowBox[{"{",RowBox[{"\"\[ZHacek]lj\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]m\"",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]n\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]nj\"",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]o\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]p\"",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]r\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]s\"",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]\[SHacek]\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]t\"",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]u\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]v\"",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"\"\[ZHacek]z\"",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"\"\[ZHacek]\[ZHacek]\"",",","0"}],"}"}]}],"}"}],Function[Short[Slot[
+1],5]]],BaseStyle -> {Deployed -> False},StripOnInput -> False]},{GridBox[{{PaneBox[
+TagBox[TooltipBox[StyleBox[StyleBox[DynamicBox[ToBoxes[FEPrivate`FrontEndResource[
+"FEStrings","sizeBriefExplanation"],StandardForm]],DynamicUpdating -> True,LineIndent -> 0,
+LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLText",StripOnInput -> False],StyleBox[DynamicBox[ToBoxes[FEPrivate`FrontEndResource[
+"FEStrings","sizeExplanation"],StandardForm]],DynamicUpdating -> True,LineIndent -> 0,
+LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False]],
+Function[Annotation[Slot[1],Style[Dynamic[FEPrivate`FrontEndResource["FEStrings",
+"sizeExplanation"]],DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},
+LineSpacing -> {1,2}],"Tooltip"]]],ImageSize -> {Automatic,{25,Full}},Alignment -> Center,
+BaselinePosition -> Baseline],ButtonBox[PaneSelectorBox[{False -> StyleBox[StyleBox[
+DynamicBox[ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeShowLess"],StandardForm]],
+DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},
+StripOnInput -> False],"OSLControl",StripOnInput -> False],True -> StyleBox[StyleBox[
+DynamicBox[ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeShowLess"],StandardForm]],
+DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},
+StripOnInput -> False],"OSLControlActive",StripOnInput -> False]},Dynamic[CurrentValue[
+"MouseOver"]],ImageSize -> {Automatic,{25,Full}},Alignment -> Center,ImageSize -> Automatic,
+FrameMargins -> 0],RuleDelayed[ButtonFunction,OutputSizeLimit`ButtonFunction[OutputSizeLimit`Defer,
+19,29094477859246327743,Times[5,Power[2,-1]]]],Appearance -> None,Enabled -> True,
+BaselinePosition -> Baseline,Method -> "Queued",Evaluator -> Automatic],ButtonBox[
+PaneSelectorBox[{False -> StyleBox[StyleBox[DynamicBox[ToBoxes[FEPrivate`FrontEndResource[
+"FEStrings","sizeShowMore"],StandardForm]],DynamicUpdating -> True,LineIndent -> 0,
+LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLControl",StripOnInput -> False],True -> StyleBox[StyleBox[DynamicBox[ToBoxes[
+FEPrivate`FrontEndResource["FEStrings","sizeShowMore"],StandardForm]],DynamicUpdating -> True,
+LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLControlActive",StripOnInput -> False]},Dynamic[CurrentValue["MouseOver"]],ImageSize -> {Automatic,{25,Full}},
+Alignment -> Center,ImageSize -> Automatic,FrameMargins -> 0],RuleDelayed[ButtonFunction,
+OutputSizeLimit`ButtonFunction[OutputSizeLimit`Defer,19,29094477859246327743,Times[
+5,2]]],Appearance -> None,Enabled -> True,BaselinePosition -> Baseline,Method -> "Queued",
+Evaluator -> Automatic],ButtonBox[PaneSelectorBox[{False -> StyleBox[StyleBox[DynamicBox[
+ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeShowAll"],StandardForm]],DynamicUpdating -> True,
+LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLControl",StripOnInput -> False],True -> StyleBox[StyleBox[DynamicBox[ToBoxes[
+FEPrivate`FrontEndResource["FEStrings","sizeShowAll"],StandardForm]],DynamicUpdating -> True,
+LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},StripOnInput -> False],
+"OSLControlActive",StripOnInput -> False]},Dynamic[CurrentValue["MouseOver"]],ImageSize -> {Automatic,{25,Full}},
+Alignment -> Center,ImageSize -> Automatic,FrameMargins -> 0],RuleDelayed[ButtonFunction,
+OutputSizeLimit`ButtonFunction[OutputSizeLimit`Defer,19,29094477859246327743,Infinity]],
+Appearance -> None,Enabled -> True,BaselinePosition -> Baseline,Method -> "Queued",
+Evaluator -> Automatic],ButtonBox[PaneSelectorBox[{False -> StyleBox[StyleBox[DynamicBox[
+ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeChangeLimit"],StandardForm]],
+DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},
+StripOnInput -> False],"OSLControl",StripOnInput -> False],True -> StyleBox[StyleBox[
+DynamicBox[ToBoxes[FEPrivate`FrontEndResource["FEStrings","sizeChangeLimit"],StandardForm]],
+DynamicUpdating -> True,LineIndent -> 0,LinebreakAdjustments -> {1.0,100,0,0,0},LineSpacing -> {1,2},
+StripOnInput -> False],"OSLControlActive",StripOnInput -> False]},Dynamic[CurrentValue[
+"MouseOver"]],ImageSize -> {Automatic,{25,Full}},Alignment -> Center,ImageSize -> Automatic,
+FrameMargins -> 0],RuleDelayed[ButtonFunction,FrontEndExecute[{FrontEnd`SetOptions[
+FrontEnd`$FrontEnd,FrontEnd`PreferencesSettings -> {"Page" -> "Advanced"}],FrontEnd`FrontEndToken[
+"PreferencesDialog"]}]],Appearance -> None,BaselinePosition -> Baseline,Evaluator -> None,
+Method -> "Preemptive"]}},AutoDelete -> False,GridBoxDividers -> {"Columns" -> {False,{True}}},
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},GridBoxSpacings -> {"Columns" -> {{2}}},
+FrameStyle -> GrayLevel[0.85]]}},GridBoxAlignment -> {"Columns" -> {{Left}}},DefaultBaseStyle -> "Column",
+GridBoxItemSize -> {"Columns" -> {{Automatic}},"Rows" -> {{Automatic}}},ColumnWidths -> Automatic,
+ColumnAlignments -> Left,RowLines -> False,RowSpacings -> {3,1}],BaseStyle -> "OutputSizeLimit",
+FrameMargins -> {{12,12},{0,15}},FrameStyle -> GrayLevel[0.85],RoundingRadius -> 5,
+StripOnInput -> False],Deploy,DefaultBaseStyle -> "Deploy"],If[SameQ[29094477859246327743,
+$SessionID],Out[19],CompoundExpression[Message[MessageName[Syntax,"noinfoker"]],Missing[
+"NotAvailable"],Null]]],StandardForm],"Output",CellLabel -> "Out[19]= ",ExpressionUUID -> "ad2ea7f6-cd15-44bf-9223-e4ddce1b753d"]},
+Open],ExpressionUUID -> "1fd55624-73c2-4151-8bc0-5ef446f16730"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Dwa"," ","="," ",RowBox[{"WordCloud","[",RowBox[{"cloud",",",RowBox[
+{"Background","\[Rule]","LightGray"}],",",RowBox[{"ImageSize","\[Rule]","500"}]}],"]"}]}]],
+"Input",CellLabel -> "In[20]:= ",ExpressionUUID -> "3470c820-0f6f-4eb4-8ea1-3cde59d0bd1d"],Cell[
+BoxData[
+GraphicsBox[{StyleBox[{InsetBox[BoxData[FormBox[StyleBox["\"pr\"",FontSize -> Scaled[
+0.38461538461538464],FontColor -> RGBColor[0.368417,0.506779,0.709798],StripOnInput -> False],
+TraditionalForm]],{0,0},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"po\"",
+FontSize -> Scaled[0.28964047763260364],FontColor -> RGBColor[0.880722,0.611041,0.142051],
+StripOnInput -> False],TraditionalForm]],{-11.5,36.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"na\"",FontSize -> Scaled[0.2163569698018517],FontColor -> RGBColor[
+0.560181,0.691569,0.194885],StripOnInput -> False],TraditionalForm]],{0.5,-36.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ne\"",FontSize -> Scaled[0.19773189409016184],
+FontColor -> RGBColor[0.922526,0.385626,0.209179],StripOnInput -> False],TraditionalForm]],
+{43.5,-9.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"za\"",FontSize -> Scaled[
+0.1889547460413602],FontColor -> RGBColor[0.528488,0.470624,0.701351],StripOnInput -> False],
+TraditionalForm]],{39.5,30.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ko\"",FontSize -> Scaled[0.15653932681491736],FontColor -> RGBColor[0.363898,0.618501,
+0.782349],StripOnInput -> False],TraditionalForm]],{-49.5,-2.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"ra\"",FontSize -> Scaled[0.16869105304144677],FontColor -> RGBColor[
+0.772079,0.431554,0.102387],StripOnInput -> False],TraditionalForm]],{37.5,-33.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ma\"",FontSize -> Scaled[0.09972311153413517],
+FontColor -> RGBColor[0.28026441037696703,0.715,0.4292089322474965],StripOnInput -> False],
+TraditionalForm]],{-46.5,-19.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"op\"",FontSize -> Scaled[0.0847646448040149],FontColor -> RGBColor[0.5407932311309059,
+0.715,0.09762679674248334],StripOnInput -> False],TraditionalForm]],{49.5,8.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"pa\"",FontSize -> Scaled[0.09316864238124081],
+FontColor -> RGBColor[0.8996399512215667,0.7463488834690629,0.0],StripOnInput -> False],
+TraditionalForm]],{-42.5,-32.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"re\"",FontSize -> Scaled[0.11584970147962274],FontColor -> RGBColor[0.647624,0.37816,
+0.614037],StripOnInput -> False],TraditionalForm]],{-52.5,20.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"od\"",FontSize -> Scaled[0.1063262524876698],FontColor -> RGBColor[
+0.915,0.3325,0.2125],StripOnInput -> False],TraditionalForm]],{-0.5,56.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"do\"",FontSize -> Scaled[0.1075105996365839],
+FontColor -> RGBColor[0.571589,0.586483,0.0],StripOnInput -> False],TraditionalForm]],
+{31.5,47.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ka\"",FontSize -> Scaled[
+0.10275698710738082],FontColor -> RGBColor[0.736782672705901,0.358,0.5030266573755369],
+StripOnInput -> False],TraditionalForm]],{-33.5,-49.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"ob\"",FontSize -> Scaled[0.0932822099160682],FontColor -> RGBColor[
+0.5833680111493557,0.4126186601628758,0.8290799721266107],StripOnInput -> False],
+TraditionalForm]],{-0.5,-59.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"go\"",FontSize -> Scaled[0.06664251103227482],FontColor -> RGBColor[0.9038177251280404,
+0.3492734123079395,0.18454431282010084],StripOnInput -> False],TraditionalForm]],
+{31.5,-49.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"pe\"",FontSize -> Scaled[
+0.07107164489054253],FontColor -> RGBColor[0.7132613816472081,0.358,0.5392132590042952],
+StripOnInput -> False],TraditionalForm]],{-50.5,35.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"sp\"",FontSize -> Scaled[0.07373236999221253],FontColor -> RGBColor[
+0.6184987019729621,0.39212575718243875,0.7412532450675947],StripOnInput -> False],
+TraditionalForm]],{-22.5,57.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"iz\"",FontSize -> Scaled[0.11997058060050186],FontColor -> RGBColor[1,0.75,0],
+StripOnInput -> False],TraditionalForm]],{18.5,-64.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"gr\"",FontSize -> Scaled[0.07668512589772432],FontColor -> RGBColor[
+0.7748409210981391,0.358,0.4444755060028629],StripOnInput -> False],TraditionalForm]],
+{-20.5,-61.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"de\"",FontSize -> Scaled[
+0.08951825733321797],FontColor -> RGBColor[0.9324333565611593,0.5282889043741062,
+0.0921900209050434],StripOnInput -> False],TraditionalForm]],{21.5,64.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"sa\"",FontSize -> Scaled[0.09227632603616856],FontColor -> RGBColor[
+0.8439466852489265,0.3467106629502147,0.3309221912517893],StripOnInput -> False],
+TraditionalForm]],{-40.5,54.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"st\"",FontSize -> Scaled[0.10351951198407892],FontColor -> RGBColor[0.9728288904374106,
+0.621644452187053,0.07336199581899142],StripOnInput -> False],TraditionalForm]],{61.5,-32.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"mo\"",FontSize -> Scaled[0.07081206195379425],
+FontColor -> RGBColor[0.8564488486273256,0.42032672705901153,0.06612212156831418],
+StripOnInput -> False],TraditionalForm]],{-5.5,68.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"kr\"",FontSize -> Scaled[0.08912888292809552],FontColor -> RGBColor[
+0.6753413537738198,0.3589675436319385,0.5991466155654507],StripOnInput -> False],
+TraditionalForm]],{68.5,6.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"up\"",FontSize -> Scaled[0.06450095180410143],FontColor -> RGBColor[0.3103557220216354,
+0.5867154223826917,0.7874268664259625],StripOnInput -> False],TraditionalForm]],{-61.5,-31.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"is\"",FontSize -> Scaled[0.10410357359176259],
+FontColor -> RGBColor[0.40082222609352647,0.5220066643438841,0.85],StripOnInput -> False],
+TraditionalForm]],{65.5,21.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"in\"",FontSize -> Scaled[0.09482348360301118],FontColor -> RGBColor[0.838355547812947,
+0.44746667828057946,0.0208888695323676],StripOnInput -> False],TraditionalForm]],
+{51.5,46.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"su\"",FontSize -> Scaled[
+0.07984879293934413],FontColor -> RGBColor[0.47401116530937026,0.47809330081437784,
+0.85],StripOnInput -> False],TraditionalForm]],{-52.5,-47.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"os\"",FontSize -> Scaled[0.08004348014190535],FontColor -> RGBColor[
+0.8857244243136628,0.3764133635295058,0.1393110607841571],StripOnInput -> False],
+TraditionalForm]],{50.5,-50.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"me\"",FontSize -> Scaled[0.0649714458769577],FontColor -> RGBColor[0.8607200975568693,
+0.34335598048862614,0.30296650407188447],StripOnInput -> False],TraditionalForm]],
+{-0.5,-70.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"pl\"",FontSize -> Scaled[
+0.07272648611231289],FontColor -> RGBColor[0.7678998606330495,0.7317110956258943,
+0.0],StripOnInput -> False],TraditionalForm]],{-71.5,0.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"ug\"",FontSize -> Scaled[0.056470104698451165],FontColor -> RGBColor[
+0.6102054708420535,0.39696347534213544,0.7619863228948663],StripOnInput -> False],
+TraditionalForm]],{-68.5,-17.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"tr\"",FontSize -> Scaled[0.09013476680799516],FontColor -> RGBColor[0.28240003484173815,
+0.6090799721266095,0.7538800418100857],StripOnInput -> False],TraditionalForm]],{-23.5,68.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ja\"",FontSize -> Scaled[0.06052608808514321],
+FontColor -> RGBColor[0.9046334610863751,0.334573307782725,0.22977756485604156],StripOnInput -> False],
+TraditionalForm]],{-10.5,-3.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"pu\"",FontSize -> Scaled[0.06344639612356148],FontColor -> RGBColor[0.47929071933511125,
+0.715,0.1759027208462221],StripOnInput -> False],TraditionalForm]],{-36.5,-61.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"je\"",FontSize -> Scaled[0.06381954659513715],
+FontColor -> RGBColor[0.9492067688690977,0.5394711792460651,0.10728609198218791],
+StripOnInput -> False],TraditionalForm]],{-64.5,31.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"be\"",FontSize -> Scaled[0.06623691269360561],FontColor -> RGBColor[
+0.428777913273419,0.5052332520359486,0.85],StripOnInput -> False],TraditionalForm]],
+{39.5,62.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"us\"",FontSize -> Scaled[
+0.07650666262870988],FontColor -> RGBColor[0.16397784358994957,0.7038177251280403,
+0.6117734123079395],StripOnInput -> False],TraditionalForm]],{35.5,-62.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"sm\"",FontSize -> Scaled[0.06086679068962534],
+FontColor -> RGBColor[0.19193353076984873,0.681453175384121,0.6453202369238185],StripOnInput -> False],
+TraditionalForm]],{-60.5,44.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"pi\"",FontSize -> Scaled[0.06594488188976379],FontColor -> RGBColor[0.7513196300394465,
+0.358,0.48066210763162087],StripOnInput -> False],TraditionalForm]],{70.5,-7.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ga\"",FontSize -> Scaled[0.06013671368002077],
+FontColor -> RGBColor[0.969373377466199,0.6043668873309952,0.08269188084126262],StripOnInput -> False],
+TraditionalForm]],{-71.5,16.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"mi\"",FontSize -> Scaled[0.07188284156788095],FontColor -> RGBColor[0.9637822400302223,
+0.5764112001511111,0.0977879519184],StripOnInput -> False],TraditionalForm]],{-39.5,65.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"sk\"",FontSize -> Scaled[0.07207752877044216],
+FontColor -> RGBColor[0.35558897405758294,0.5505288207539337,0.8417067688690995],
+StripOnInput -> False],TraditionalForm]],{68.5,36.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"mu\"",FontSize -> Scaled[0.05637276109717055],FontColor -> RGBColor[
+0.8774935098648088,0.34000129802703827,0.2750108168919853],StripOnInput -> False],
+TraditionalForm]],{-17.5,-74.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"um\"",FontSize -> Scaled[0.05755710824608463],FontColor -> RGBColor[0.26512246998569167,
+0.6229020240114467,0.73314696398283],StripOnInput -> False],TraditionalForm]],{-53.5,-57.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"br\"",FontSize -> Scaled[0.06834602405468547],
+FontColor -> RGBColor[0.9052934053395919,0.510195603559728,0.06776406480563275],StripOnInput -> False],
+TraditionalForm]],{-59.5,53.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ba\"",FontSize -> Scaled[0.06873539845980792],FontColor -> RGBColor[0.23716678280579248,
+0.645266573755366,0.699600139366951],StripOnInput -> False],TraditionalForm]],{57.5,58.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ku\"",FontSize -> Scaled[0.06964393873842693],
+FontColor -> RGBColor[0.9810598048862722,0.7553955338762525,0.0],StripOnInput -> False],
+TraditionalForm]],{52.5,-63.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"sv\"",FontSize -> Scaled[0.07102297308990223],FontColor -> RGBColor[0.37977756485605163,
+0.715,0.3025558265468435],StripOnInput -> False],TraditionalForm]],{67.5,-44.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ot\"",FontSize -> Scaled[0.07522497187851519],
+FontColor -> RGBColor[0.8613800418100862,0.48092002787339083,0.02824203762907758],
+StripOnInput -> False],TraditionalForm]],{-36.5,-73.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"di\"",FontSize -> Scaled[0.07976767327161029],FontColor -> RGBColor[
+0.9874666782805795,0.6948333914028977,0.033839968642435214],StripOnInput -> False],
+TraditionalForm]],{-70.5,-45.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"an\"",FontSize -> Scaled[0.06057475988578351],FontColor -> RGBColor[0.7175796237092107,
+0.7261199581899123,0.0],StripOnInput -> False],TraditionalForm]],{36.5,-73.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"gl\"",FontSize -> Scaled[0.061921346370165276],
+FontColor -> RGBColor[0.9930578157165594,0.7227890785827968,0.01874389756528967],
+StripOnInput -> False],TraditionalForm]],{-49.5,-68.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"te\"",FontSize -> Scaled[0.06935190793458511],FontColor -> RGBColor[
+0.8168067340273636,0.3521386531945273,0.3761554432877274],StripOnInput -> False],
+TraditionalForm]],{43.5,72.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ve\"",FontSize -> Scaled[0.06076944708834473],FontColor -> RGBColor[0.6319174318193065,
+0.38429816477207124,0.7077064204517338],StripOnInput -> False],TraditionalForm]],
+{-56.5,65.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ek\"",FontSize -> Scaled[
+0.06122371722765424],FontColor -> RGBColor[0.7896667828057927,0.3575666434388414,
+0.4213886953236787],StripOnInput -> False],TraditionalForm]],{68.5,-56.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"dr\"",FontSize -> Scaled[0.06330038072164057],
+FontColor -> RGBColor[0.8745421494417032,0.39318677583744527,0.11135537360425793],
+StripOnInput -> False],TraditionalForm]],{72.5,48.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"ok\"",FontSize -> Scaled[0.06552305961754781],FontColor -> RGBColor[
+0.596786740995709,0.404791067752503,0.7955331475107271],StripOnInput -> False],TraditionalForm]],
+{58.5,70.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"uz\"",FontSize -> Scaled[
+0.0657339707536558],FontColor -> RGBColor[0.8342400905885153,0.4628267270590103,0.0038160815296638794],
+StripOnInput -> False],TraditionalForm]],{51.5,-73.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"no\"",FontSize -> Scaled[0.06052608808514321],FontColor -> RGBColor[
+0.38354466123747527,0.5323732032575149,0.85],StripOnInput -> False],TraditionalForm]],
+{-70.5,-55.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"bo\"",FontSize -> Scaled[
+0.06354373972484209],FontColor -> RGBColor[0.6897400905885174,0.358,0.5753998606330502],
+StripOnInput -> False],TraditionalForm]],{-55.5,73.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"se\"",FontSize -> Scaled[0.06583131435493642],FontColor -> RGBColor[
+0.2187618985811806,0.715,0.5074848563512248],StripOnInput -> False],TraditionalForm]],
+{-63.5,-66.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ud\"",FontSize -> Scaled[
+0.05575625162239336],FontColor -> RGBColor[0.8633598745697435,0.40996018814538476,
+0.08339968642435877],StripOnInput -> False],TraditionalForm]],{68.5,-68.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"im\"",FontSize -> Scaled[0.05700549450549451],
+FontColor -> RGBColor[0.4567336004533182,0.4884598397280091,0.85],StripOnInput -> False],
+TraditionalForm]],{-71.5,65.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"bu\"",FontSize -> Scaled[0.05817361772086182],FontColor -> RGBColor[0.845266573755366,
+0.437100139366951,0.03816643438841502],StripOnInput -> False],TraditionalForm]],{-0.5,77.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ta\"",FontSize -> Scaled[0.06510123734533184],
+FontColor -> RGBColor[0.8493197142977551,0.7407577460330839,0.0],StripOnInput -> False],
+TraditionalForm]],{75.5,-20.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"vi\"",FontSize -> Scaled[0.066139569092325],FontColor -> RGBColor[0.9784200278733908,
+0.649600139366954,0.058265924741844846],StripOnInput -> False],TraditionalForm]],
+{13.5,78.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"sl\"",FontSize -> Scaled[
+0.06990352167517522],FontColor -> RGBColor[0.5472001045252132,0.43417993728487203,
+0.85],StripOnInput -> False],TraditionalForm]],{28.5,75.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"si\"",FontSize -> Scaled[0.07233711170719045],FontColor -> RGBColor[
+0.8878600487784333,0.33792799024431336,0.2577332520359445],StripOnInput -> False],
+TraditionalForm]],{9.5,-80.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ha\"",FontSize -> Scaled[0.0551235182140694],FontColor -> RGBColor[0.6453361616656581,
+0.37647057236169945,0.6741595958358548],StripOnInput -> False],TraditionalForm]],
+{-15.5,79.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ar\"",FontSize -> Scaled[
+0.05518841394825647],FontColor -> RGBColor[0.8949268664259606,0.5032845776173072,
+0.05843417978336459],StripOnInput -> False],TraditionalForm]],{-77.5,-27.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"uk\"",FontSize -> Scaled[0.05549666868564507],
+FontColor -> RGBColor[0.8064401951137368,0.3542119609772526,0.39343300814377197],
+StripOnInput -> False],TraditionalForm]],{81.5,17.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"da\"",FontSize -> Scaled[0.05599961062559489],FontColor -> RGBColor[
+0.9603267270590103,0.5591336352950514,0.10711783694067224],StripOnInput -> False],
+TraditionalForm]],{-79.5,25.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"dv\"",FontSize -> Scaled[0.05616184996106256],FontColor -> RGBColor[0.3383114092015346,
+0.5643508726387724,0.8209736910418415],StripOnInput -> False],TraditionalForm]],{78.5,-32.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"or\"",FontSize -> Scaled[0.056794583369386524],
+FontColor -> RGBColor[0.7658565873730018,0.358,0.4582975578876895],StripOnInput -> False],
+TraditionalForm]],{-4.5,-83.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"vo\"",FontSize -> Scaled[0.057654451847365236],FontColor -> RGBColor[0.8335801463353031,
+0.3487839707329394,0.3481997561078282],StripOnInput -> False],TraditionalForm]],{-18.5,-83.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"va\"",FontSize -> Scaled[0.057670675780912],
+FontColor -> RGBColor[0.9307395679624266,0.7498043964402695,0.0],StripOnInput -> False],
+TraditionalForm]],{-82.5,-12.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"sr\"",FontSize -> Scaled[0.055934714891407805],FontColor -> RGBColor[0.4177882075393331,
+0.715,0.25417864494993975],StripOnInput -> False],TraditionalForm]],{82.5,0.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"so\"",FontSize -> Scaled[0.05658367223327854],
+FontColor -> RGBColor[0.8510135028964549,0.47400900193096995,0.018912152606809424],
+StripOnInput -> False],TraditionalForm]],{83.5,-8.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"tu\"",FontSize -> Scaled[0.05494505494505495],FontColor -> RGBColor[
+0.9107287510704583,0.33890687339431275,0.20182187767614543],StripOnInput -> False],
+TraditionalForm]],{-76.5,36.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"fa\"",FontSize -> Scaled[0.055366877217270925],FontColor -> RGBColor[0.2198892179497479,
+0.6590886256402017,0.6788670615396974],StripOnInput -> False],TraditionalForm]],{-83.5,0.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ru\"",FontSize -> Scaled[0.0568594791035736],
+FontColor -> RGBColor[0.9840111653093676,0.677555826546838,0.04316985366470745],StripOnInput -> False],
+TraditionalForm]],{-37.5,77.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"to\"",FontSize -> Scaled[0.05708661417322835],FontColor -> RGBColor[0.8926354502560807,
+0.366046824615879,0.15658862564020168],StripOnInput -> False],TraditionalForm]],{22.5,-83.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ut\"",FontSize -> Scaled[0.05804382625248767],
+FontColor -> RGBColor[0.5750747800184488,0.4174563783225715,0.8498130499538777],StripOnInput -> False],
+TraditionalForm]],{83.5,28.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"vr\"",FontSize -> Scaled[0.05942286060396297],FontColor -> RGBColor[0.31827505306025683,
+0.715,0.3808317506505822],StripOnInput -> False],TraditionalForm]],{-74.5,48.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ro\"",FontSize -> Scaled[0.05973111534135156],
+FontColor -> RGBColor[0.7277983389807635,0.358,0.5168487092603637],StripOnInput -> False],
+TraditionalForm]],{-32.5,-84.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"kl\"",FontSize -> Scaled[0.0675672752444406],FontColor -> RGBColor[0.6361597700445392,
+0.7170733077827265,0.0],StripOnInput -> False],TraditionalForm]],{-83.5,-39.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"lj\"",FontSize -> Scaled[0.056664791901012375],
+FontColor -> RGBColor[0.15725938678540247,0.715,0.5857607804549424],StripOnInput -> False],
+TraditionalForm]],{80.5,-43.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"lu\"",FontSize -> Scaled[0.054977502812148485],FontColor -> RGBColor[0.6672593867853922,
+0.7205288207539324,0.0],StripOnInput -> False],TraditionalForm]],{39.5,83.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"hi\"",FontSize -> Scaled[0.055707579821753055],
+FontColor -> RGBColor[0.529922539669161,0.44454647619850335,0.85],StripOnInput -> False],
+TraditionalForm]],{72.5,58.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"le\"",FontSize -> Scaled[0.056437656831357624],FontColor -> RGBColor[0.7989994773739094,
+0.735166608597101,0.0],StripOnInput -> False],TraditionalForm]],{84.5,39.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"bl\"",FontSize -> Scaled[0.057394868910616945],
+FontColor -> RGBColor[0.6670481226429111,0.3638052617916352,0.6198796933927223],StripOnInput -> False],
+TraditionalForm]],{-50.5,81.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"lo\"",FontSize -> Scaled[0.05744354071125725],FontColor -> RGBColor[0.922066817647527,
+0.5213778784316846,0.08286013588277422],StripOnInput -> False],TraditionalForm]],
+{-45.5,-83.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"bi\"",FontSize -> Scaled[
+0.060818118888985036],FontColor -> RGBColor[0.8781534541180211,0.4921023027453475,
+0.04333810870621905],StripOnInput -> False],TraditionalForm]],{-84.5,11.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"la\"",FontSize -> Scaled[0.06268387124686338],
+FontColor -> RGBColor[0.5019668524892619,0.46131988850644284,0.85],StripOnInput -> False],
+TraditionalForm]],{51.5,81.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ci\"",FontSize -> Scaled[0.057281301375789566],FontColor -> RGBColor[0.5788038738141875,
+0.715,0.049249615145579635],StripOnInput -> False],TraditionalForm]],{-83.5,-51.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ti\"",FontSize -> Scaled[0.05598338669204811],
+FontColor -> RGBColor[0.7042770479220728,0.358,0.5530353108891188],StripOnInput -> False],
+TraditionalForm]],{-85.5,47.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"li\"",FontSize -> Scaled[0.06776196244700183],FontColor -> RGBColor[0.6536293927965667,
+0.37163285420200276,0.6534265180085832],StripOnInput -> False],TraditionalForm]],
+{85.5,-20.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"fi\"",FontSize -> Scaled[
+0.055561564419832135],FontColor -> RGBColor[0.9986489531525362,0.7507447657626809,
+0.0036478264881522893],StripOnInput -> False],TraditionalForm]],{84.5,51.5},Center,
+Automatic]},{{}},StripOnInput -> False]},Method -> CompressedData["1:eJylUttKBDEMHVdFfBERn3zzG/wA2Ys3cGXYWXyvs6lbzDRDkoLz3f6A7YDuOpR5sdBy0iQnySHXb7Syh0VRyFF8np2onfxYq4BQXUawAGsC6oyC3xjuKu0Q5DQ6pkGpMerqQdLVLumBTbt1tTx5BTa1OvKj9U4ieAWWGMc3/fm6HYRcRLCOXB9LCgIlietZJ/usPVhzADmO4N6gQKbQnbVQq4w2lOZ8dO9bjFftwUhkqsRRDXLpf+A826cpyfl/cKWWFkwtOg/yd+6MVJYBLHEzDyzES9rArzgZ3hZNDQ14HeVNrX9WSbYpYsbXVcl8IT8scb7bjBJJM6v0Df+umJs="],
+DefaultBaseStyle -> {"Graphics",FontFamily -> "Helvetica"},PlotRange -> {{-91.0,91.0},{-91.0,89.0}},
+Background -> GrayLevel[0.85],ImageSize -> 500,ExpressionUUID -> "e0065398-3e82-4624-9571-4a2715cbe6a6"],
+StandardForm],"Output",CellLabel -> "Out[20]= ",ExpressionUUID -> "9a6cfe14-b647-4e07-837c-dafa75713145"]},
+Open],ExpressionUUID -> "03d07fc5-b411-4197-9842-72ca16c77c6c"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"GraphicsRow","[",RowBox[{RowBox[{"{",RowBox[{"Jeden",",","Dwa"}],"}"}],",",RowBox[
+{"Frame","\[Rule]","All"}],",",RowBox[{"ImageSize","\[Rule]",RowBox[{"{",RowBox[{"2200",",","1500"}],"}"}]}]}],"]"}]],
+"Input",CellLabel -> "In[22]:= ",ExpressionUUID -> "1542978d-a7a3-4a36-89d8-3ae2b7996906"],Cell[
+BoxData[
+GraphicsBox[{{},{{InsetBox[BoxData[FormBox[TemplateBox[{GraphicsBox[RasterBox[CompressedData[
+"1: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"],
+{{0,0},{30,30}},{0,1}],Epilog -> {InsetBox[FormBox["0",TraditionalForm],NCache[{Rational[
+1,2],Rational[59,2]},{0.5,29.5}]],InsetBox[FormBox["136",TraditionalForm],NCache[
+{Rational[3,2],Rational[59,2]},{1.5,29.5}]],InsetBox[FormBox["15",TraditionalForm],
+NCache[{Rational[5,2],Rational[59,2]},{2.5,29.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[59,2]},{3.5,29.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[59,2]},{4.5,29.5}]],InsetBox[FormBox["255",TraditionalForm],
+NCache[{Rational[11,2],Rational[59,2]},{5.5,29.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[59,2]},{6.5,29.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[59,2]},{7.5,29.5}]],InsetBox[FormBox["58",TraditionalForm],
+NCache[{Rational[17,2],Rational[59,2]},{8.5,29.5}]],InsetBox[FormBox["150",TraditionalForm],
+NCache[{Rational[19,2],Rational[59,2]},{9.5,29.5}]],InsetBox[FormBox["246",TraditionalForm],
+NCache[{Rational[21,2],Rational[59,2]},{10.5,29.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[59,2]},{11.5,29.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[25,2],Rational[59,2]},{12.5,29.5}]],InsetBox[FormBox["11",TraditionalForm],
+NCache[{Rational[27,2],Rational[59,2]},{13.5,29.5}]],InsetBox[FormBox["581",TraditionalForm],
+NCache[{Rational[29,2],Rational[59,2]},{14.5,29.5}]],InsetBox[FormBox["532",TraditionalForm],
+NCache[{Rational[31,2],Rational[59,2]},{15.5,29.5}]],InsetBox[FormBox["3",TraditionalForm],
+NCache[{Rational[33,2],Rational[59,2]},{16.5,29.5}]],InsetBox[FormBox["451",TraditionalForm],
+NCache[{Rational[35,2],Rational[59,2]},{17.5,29.5}]],InsetBox[FormBox["1016",TraditionalForm],
+NCache[{Rational[37,2],Rational[59,2]},{18.5,29.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[59,2]},{19.5,29.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[41,2],Rational[59,2]},{20.5,29.5}]],InsetBox[FormBox["550",TraditionalForm],
+NCache[{Rational[43,2],Rational[59,2]},{21.5,29.5}]],InsetBox[FormBox["684",TraditionalForm],
+NCache[{Rational[45,2],Rational[59,2]},{22.5,29.5}]],InsetBox[FormBox["303",TraditionalForm],
+NCache[{Rational[47,2],Rational[59,2]},{23.5,29.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[59,2]},{24.5,29.5}]],InsetBox[FormBox["295",TraditionalForm],
+NCache[{Rational[51,2],Rational[59,2]},{25.5,29.5}]],InsetBox[FormBox["584",TraditionalForm],
+NCache[{Rational[53,2],Rational[59,2]},{26.5,29.5}]],InsetBox[FormBox["140",TraditionalForm],
+NCache[{Rational[55,2],Rational[59,2]},{27.5,29.5}]],InsetBox[FormBox["72",TraditionalForm],
+NCache[{Rational[57,2],Rational[59,2]},{28.5,29.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[59,2]},{29.5,29.5}]],InsetBox[FormBox["1519",TraditionalForm],
+NCache[{Rational[1,2],Rational[57,2]},{0.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[57,2]},{1.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[57,2]},{2.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[57,2]},{3.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[57,2]},{4.5,28.5}]],InsetBox[FormBox["23",TraditionalForm],
+NCache[{Rational[11,2],Rational[57,2]},{5.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[57,2]},{6.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[57,2]},{7.5,28.5}]],InsetBox[FormBox["1365",TraditionalForm],
+NCache[{Rational[17,2],Rational[57,2]},{8.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[57,2]},{9.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[57,2]},{10.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[57,2]},{11.5,28.5}]],InsetBox[FormBox["1031",TraditionalForm],
+NCache[{Rational[25,2],Rational[57,2]},{12.5,28.5}]],InsetBox[FormBox["235",TraditionalForm],
+NCache[{Rational[27,2],Rational[57,2]},{13.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[57,2]},{14.5,28.5}]],InsetBox[FormBox["820",TraditionalForm],
+NCache[{Rational[31,2],Rational[57,2]},{15.5,28.5}]],InsetBox[FormBox["117",TraditionalForm],
+NCache[{Rational[33,2],Rational[57,2]},{16.5,28.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[35,2],Rational[57,2]},{17.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[57,2]},{18.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[57,2]},{19.5,28.5}]],InsetBox[FormBox["1199",TraditionalForm],
+NCache[{Rational[41,2],Rational[57,2]},{20.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[57,2]},{21.5,28.5}]],InsetBox[FormBox["1495",TraditionalForm],
+NCache[{Rational[45,2],Rational[57,2]},{22.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[57,2]},{23.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[57,2]},{24.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[57,2]},{25.5,28.5}]],InsetBox[FormBox["868",TraditionalForm],
+NCache[{Rational[53,2],Rational[57,2]},{26.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[57,2]},{27.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[57,2]},{28.5,28.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[57,2]},{29.5,28.5}]],InsetBox[FormBox["195",TraditionalForm],
+NCache[{Rational[1,2],Rational[55,2]},{0.5,27.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[3,2],Rational[55,2]},{1.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[55,2]},{2.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[55,2]},{3.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[55,2]},{4.5,27.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[11,2],Rational[55,2]},{5.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[55,2]},{6.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[55,2]},{7.5,27.5}]],InsetBox[FormBox["640",TraditionalForm],
+NCache[{Rational[17,2],Rational[55,2]},{8.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[55,2]},{9.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[55,2]},{10.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[55,2]},{11.5,27.5}]],InsetBox[FormBox["813",TraditionalForm],
+NCache[{Rational[25,2],Rational[55,2]},{12.5,27.5}]],InsetBox[FormBox["204",TraditionalForm],
+NCache[{Rational[27,2],Rational[55,2]},{13.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[55,2]},{14.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[55,2]},{15.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[55,2]},{16.5,27.5}]],InsetBox[FormBox["25",TraditionalForm],
+NCache[{Rational[35,2],Rational[55,2]},{17.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[55,2]},{18.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[55,2]},{19.5,27.5}]],InsetBox[FormBox["25",TraditionalForm],
+NCache[{Rational[41,2],Rational[55,2]},{20.5,27.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[43,2],Rational[55,2]},{21.5,27.5}]],InsetBox[FormBox["470",TraditionalForm],
+NCache[{Rational[45,2],Rational[55,2]},{22.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[55,2]},{23.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[55,2]},{24.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[55,2]},{25.5,27.5}]],InsetBox[FormBox["68",TraditionalForm],
+NCache[{Rational[53,2],Rational[55,2]},{26.5,27.5}]],InsetBox[FormBox["173",TraditionalForm],
+NCache[{Rational[55,2],Rational[55,2]},{27.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[55,2]},{28.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[55,2]},{29.5,27.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[1,2],Rational[53,2]},{0.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[53,2]},{1.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[53,2]},{2.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[53,2]},{3.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[53,2]},{4.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[53,2]},{5.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[53,2]},{6.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[53,2]},{7.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[17,2],Rational[53,2]},{8.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[53,2]},{9.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[53,2]},{10.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[53,2]},{11.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[25,2],Rational[53,2]},{12.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[53,2]},{13.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[53,2]},{14.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[53,2]},{15.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[53,2]},{16.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[53,2]},{17.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[53,2]},{18.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[53,2]},{19.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[41,2],Rational[53,2]},{20.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[53,2]},{21.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[53,2]},{22.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[53,2]},{23.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[53,2]},{24.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[53,2]},{25.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[53,2],Rational[53,2]},{26.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[53,2]},{27.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[53,2]},{28.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[53,2]},{29.5,26.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[1,2],Rational[51,2]},{0.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[51,2]},{1.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[51,2]},{2.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[51,2]},{3.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[51,2]},{4.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[51,2]},{5.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[51,2]},{6.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[51,2]},{7.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[17,2],Rational[51,2]},{8.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[51,2]},{9.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[51,2]},{10.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[51,2]},{11.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[25,2],Rational[51,2]},{12.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[51,2]},{13.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[51,2]},{14.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[51,2]},{15.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[51,2]},{16.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[51,2]},{17.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[51,2]},{18.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[51,2]},{19.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[41,2],Rational[51,2]},{20.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[51,2]},{21.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[51,2]},{22.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[51,2]},{23.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[51,2]},{24.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[51,2]},{25.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[53,2],Rational[51,2]},{26.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[51,2]},{27.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[51,2]},{28.5,25.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[51,2]},{29.5,25.5}]],InsetBox[FormBox["734",TraditionalForm],
+NCache[{Rational[1,2],Rational[49,2]},{0.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[49,2]},{1.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[49,2]},{2.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[49,2]},{3.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[49,2]},{4.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[49,2]},{5.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[49,2]},{6.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[49,2]},{7.5,24.5}]],InsetBox[FormBox["2800",TraditionalForm],
+NCache[{Rational[17,2],Rational[49,2]},{8.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[49,2]},{9.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[49,2]},{10.5,24.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[23,2],Rational[49,2]},{11.5,24.5}]],InsetBox[FormBox["2199",TraditionalForm],
+NCache[{Rational[25,2],Rational[49,2]},{12.5,24.5}]],InsetBox[FormBox["294",TraditionalForm],
+NCache[{Rational[27,2],Rational[49,2]},{13.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[49,2]},{14.5,24.5}]],InsetBox[FormBox["45",TraditionalForm],
+NCache[{Rational[31,2],Rational[49,2]},{15.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[49,2]},{16.5,24.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[35,2],Rational[49,2]},{17.5,24.5}]],InsetBox[FormBox["34",TraditionalForm],
+NCache[{Rational[37,2],Rational[49,2]},{18.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[49,2]},{19.5,24.5}]],InsetBox[FormBox["3909",TraditionalForm],
+NCache[{Rational[41,2],Rational[49,2]},{20.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[49,2]},{21.5,24.5}]],InsetBox[FormBox["1184",TraditionalForm],
+NCache[{Rational[45,2],Rational[49,2]},{22.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[49,2]},{23.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[49,2]},{24.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[49,2]},{25.5,24.5}]],InsetBox[FormBox["667",TraditionalForm],
+NCache[{Rational[53,2],Rational[49,2]},{26.5,24.5}]],InsetBox[FormBox["744",TraditionalForm],
+NCache[{Rational[55,2],Rational[49,2]},{27.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[49,2]},{28.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[49,2]},{29.5,24.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[1,2],Rational[47,2]},{0.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[47,2]},{1.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[47,2]},{2.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[47,2]},{3.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[47,2]},{4.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[47,2]},{5.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[47,2]},{6.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[47,2]},{7.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[17,2],Rational[47,2]},{8.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[47,2]},{9.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[47,2]},{10.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[47,2]},{11.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[25,2],Rational[47,2]},{12.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[47,2]},{13.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[47,2]},{14.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[47,2]},{15.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[47,2]},{16.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[47,2]},{17.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[47,2]},{18.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[47,2]},{19.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[41,2],Rational[47,2]},{20.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[47,2]},{21.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[47,2]},{22.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[47,2]},{23.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[47,2]},{24.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[47,2]},{25.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[53,2],Rational[47,2]},{26.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[47,2]},{27.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[47,2]},{28.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[47,2]},{29.5,23.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[1,2],Rational[45,2]},{0.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[45,2]},{1.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[45,2]},{2.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[45,2]},{3.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[45,2]},{4.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[45,2]},{5.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[45,2]},{6.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[45,2]},{7.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[17,2],Rational[45,2]},{8.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[45,2]},{9.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[45,2]},{10.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[45,2]},{11.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[25,2],Rational[45,2]},{12.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[45,2]},{13.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[45,2]},{14.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[45,2]},{15.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[45,2]},{16.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[45,2]},{17.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[45,2]},{18.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[45,2]},{19.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[41,2],Rational[45,2]},{20.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[45,2]},{21.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[45,2]},{22.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[45,2]},{23.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[45,2]},{24.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[45,2]},{25.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[53,2],Rational[45,2]},{26.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[45,2]},{27.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[45,2]},{28.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[45,2]},{29.5,22.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[1,2],Rational[43,2]},{0.5,21.5}]],InsetBox[FormBox["10",TraditionalForm],
+NCache[{Rational[3,2],Rational[43,2]},{1.5,21.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[5,2],Rational[43,2]},{2.5,21.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[43,2]},{3.5,21.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[43,2]},{4.5,21.5}]],InsetBox[FormBox["116",TraditionalForm],
+NCache[{Rational[11,2],Rational[43,2]},{5.5,21.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[43,2]},{6.5,21.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[43,2]},{7.5,21.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[17,2],Rational[43,2]},{8.5,21.5}]],InsetBox[FormBox["93",TraditionalForm],
+NCache[{Rational[19,2],Rational[43,2]},{9.5,21.5}]],InsetBox[FormBox["198",TraditionalForm],
+NCache[{Rational[21,2],Rational[43,2]},{10.5,21.5}]],InsetBox[FormBox["10",TraditionalForm],
+NCache[{Rational[23,2],Rational[43,2]},{11.5,21.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[25,2],Rational[43,2]},{12.5,21.5}]],InsetBox[FormBox["6",TraditionalForm],
+NCache[{Rational[27,2],Rational[43,2]},{13.5,21.5}]],InsetBox[FormBox["1056",TraditionalForm],
+NCache[{Rational[29,2],Rational[43,2]},{14.5,21.5}]],InsetBox[FormBox["593",TraditionalForm],
+NCache[{Rational[31,2],Rational[43,2]},{15.5,21.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[43,2]},{16.5,21.5}]],InsetBox[FormBox["377",TraditionalForm],
+NCache[{Rational[35,2],Rational[43,2]},{17.5,21.5}]],InsetBox[FormBox["329",TraditionalForm],
+NCache[{Rational[37,2],Rational[43,2]},{18.5,21.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[43,2]},{19.5,21.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[41,2],Rational[43,2]},{20.5,21.5}]],InsetBox[FormBox["255",TraditionalForm],
+NCache[{Rational[43,2],Rational[43,2]},{21.5,21.5}]],InsetBox[FormBox["164",TraditionalForm],
+NCache[{Rational[45,2],Rational[43,2]},{22.5,21.5}]],InsetBox[FormBox["232",TraditionalForm],
+NCache[{Rational[47,2],Rational[43,2]},{23.5,21.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[43,2]},{24.5,21.5}]],InsetBox[FormBox["258",TraditionalForm],
+NCache[{Rational[51,2],Rational[43,2]},{25.5,21.5}]],InsetBox[FormBox["147",TraditionalForm],
+NCache[{Rational[53,2],Rational[43,2]},{26.5,21.5}]],InsetBox[FormBox["237",TraditionalForm],
+NCache[{Rational[55,2],Rational[43,2]},{27.5,21.5}]],InsetBox[FormBox["9",TraditionalForm],
+NCache[{Rational[57,2],Rational[43,2]},{28.5,21.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[43,2]},{29.5,21.5}]],InsetBox[FormBox["695",TraditionalForm],
+NCache[{Rational[1,2],Rational[41,2]},{0.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[41,2]},{1.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[41,2]},{2.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[41,2]},{3.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[41,2]},{4.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[41,2]},{5.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[41,2]},{6.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[41,2]},{7.5,20.5}]],InsetBox[FormBox["308",TraditionalForm],
+NCache[{Rational[17,2],Rational[41,2]},{8.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[41,2]},{9.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[41,2]},{10.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[41,2]},{11.5,20.5}]],InsetBox[FormBox["707",TraditionalForm],
+NCache[{Rational[25,2],Rational[41,2]},{12.5,20.5}]],InsetBox[FormBox["8",TraditionalForm],
+NCache[{Rational[27,2],Rational[41,2]},{13.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[41,2]},{14.5,20.5}]],InsetBox[FormBox["196",TraditionalForm],
+NCache[{Rational[31,2],Rational[41,2]},{15.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[41,2]},{16.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[41,2]},{17.5,20.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[37,2],Rational[41,2]},{18.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[41,2]},{19.5,20.5}]],InsetBox[FormBox["600",TraditionalForm],
+NCache[{Rational[41,2],Rational[41,2]},{20.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[41,2]},{21.5,20.5}]],InsetBox[FormBox["535",TraditionalForm],
+NCache[{Rational[45,2],Rational[41,2]},{22.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[41,2]},{23.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[41,2]},{24.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[41,2]},{25.5,20.5}]],InsetBox[FormBox["226",TraditionalForm],
+NCache[{Rational[53,2],Rational[41,2]},{26.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[41,2]},{27.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[41,2]},{28.5,20.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[41,2]},{29.5,20.5}]],InsetBox[FormBox["989",TraditionalForm],
+NCache[{Rational[1,2],Rational[39,2]},{0.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[39,2]},{1.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[39,2]},{2.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[39,2]},{3.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[39,2]},{4.5,19.5}]],InsetBox[FormBox["18",TraditionalForm],
+NCache[{Rational[11,2],Rational[39,2]},{5.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[39,2]},{6.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[39,2]},{7.5,19.5}]],InsetBox[FormBox["603",TraditionalForm],
+NCache[{Rational[17,2],Rational[39,2]},{8.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[39,2]},{9.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[39,2]},{10.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[39,2]},{11.5,19.5}]],InsetBox[FormBox["288",TraditionalForm],
+NCache[{Rational[25,2],Rational[39,2]},{12.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[39,2]},{13.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[39,2]},{14.5,19.5}]],InsetBox[FormBox["1099",TraditionalForm],
+NCache[{Rational[31,2],Rational[39,2]},{15.5,19.5}]],InsetBox[FormBox["16",TraditionalForm],
+NCache[{Rational[33,2],Rational[39,2]},{16.5,19.5}]],InsetBox[FormBox["43",TraditionalForm],
+NCache[{Rational[35,2],Rational[39,2]},{17.5,19.5}]],InsetBox[FormBox["323",TraditionalForm],
+NCache[{Rational[37,2],Rational[39,2]},{18.5,19.5}]],InsetBox[FormBox["201",TraditionalForm],
+NCache[{Rational[39,2],Rational[39,2]},{19.5,19.5}]],InsetBox[FormBox["1390",TraditionalForm],
+NCache[{Rational[41,2],Rational[39,2]},{20.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[39,2]},{21.5,19.5}]],InsetBox[FormBox["2009",TraditionalForm],
+NCache[{Rational[45,2],Rational[39,2]},{22.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[39,2]},{23.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[39,2]},{24.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[39,2]},{25.5,19.5}]],InsetBox[FormBox["584",TraditionalForm],
+NCache[{Rational[53,2],Rational[39,2]},{26.5,19.5}]],InsetBox[FormBox["78",TraditionalForm],
+NCache[{Rational[55,2],Rational[39,2]},{27.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[39,2]},{28.5,19.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[39,2]},{29.5,19.5}]],InsetBox[FormBox["680",TraditionalForm],
+NCache[{Rational[1,2],Rational[37,2]},{0.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[37,2]},{1.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[37,2]},{2.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[37,2]},{3.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[37,2]},{4.5,18.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[11,2],Rational[37,2]},{5.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[37,2]},{6.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[37,2]},{7.5,18.5}]],InsetBox[FormBox["441",TraditionalForm],
+NCache[{Rational[17,2],Rational[37,2]},{8.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[37,2]},{9.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[37,2]},{10.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[37,2]},{11.5,18.5}]],InsetBox[FormBox["716",TraditionalForm],
+NCache[{Rational[25,2],Rational[37,2]},{12.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[37,2]},{13.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[37,2]},{14.5,18.5}]],InsetBox[FormBox["184",TraditionalForm],
+NCache[{Rational[31,2],Rational[37,2]},{15.5,18.5}]],InsetBox[FormBox["23",TraditionalForm],
+NCache[{Rational[33,2],Rational[37,2]},{16.5,18.5}]],InsetBox[FormBox["7",TraditionalForm],
+NCache[{Rational[35,2],Rational[37,2]},{17.5,18.5}]],InsetBox[FormBox["3",TraditionalForm],
+NCache[{Rational[37,2],Rational[37,2]},{18.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[37,2]},{19.5,18.5}]],InsetBox[FormBox["515",TraditionalForm],
+NCache[{Rational[41,2],Rational[37,2]},{20.5,18.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[43,2],Rational[37,2]},{21.5,18.5}]],InsetBox[FormBox["537",TraditionalForm],
+NCache[{Rational[45,2],Rational[37,2]},{22.5,18.5}]],InsetBox[FormBox["3",TraditionalForm],
+NCache[{Rational[47,2],Rational[37,2]},{23.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[37,2]},{24.5,18.5}]],InsetBox[FormBox["32",TraditionalForm],
+NCache[{Rational[51,2],Rational[37,2]},{25.5,18.5}]],InsetBox[FormBox["307",TraditionalForm],
+NCache[{Rational[53,2],Rational[37,2]},{26.5,18.5}]],InsetBox[FormBox["163",TraditionalForm],
+NCache[{Rational[55,2],Rational[37,2]},{27.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[37,2]},{28.5,18.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[37,2]},{29.5,18.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[1,2],Rational[35,2]},{0.5,17.5}]],InsetBox[FormBox["14",TraditionalForm],
+NCache[{Rational[3,2],Rational[35,2]},{1.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[35,2]},{2.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[35,2]},{3.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[35,2]},{4.5,17.5}]],InsetBox[FormBox["309",TraditionalForm],
+NCache[{Rational[11,2],Rational[35,2]},{5.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[35,2]},{6.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[35,2]},{7.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[17,2],Rational[35,2]},{8.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[35,2]},{9.5,17.5}]],InsetBox[FormBox["169",TraditionalForm],
+NCache[{Rational[21,2],Rational[35,2]},{10.5,17.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[23,2],Rational[35,2]},{11.5,17.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[25,2],Rational[35,2]},{12.5,17.5}]],InsetBox[FormBox["11",TraditionalForm],
+NCache[{Rational[27,2],Rational[35,2]},{13.5,17.5}]],InsetBox[FormBox["95",TraditionalForm],
+NCache[{Rational[29,2],Rational[35,2]},{14.5,17.5}]],InsetBox[FormBox["210",TraditionalForm],
+NCache[{Rational[31,2],Rational[35,2]},{15.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[35,2]},{16.5,17.5}]],InsetBox[FormBox["796",TraditionalForm],
+NCache[{Rational[35,2],Rational[35,2]},{17.5,17.5}]],InsetBox[FormBox["3127",TraditionalForm],
+NCache[{Rational[37,2],Rational[35,2]},{18.5,17.5}]],InsetBox[FormBox["32",TraditionalForm],
+NCache[{Rational[39,2],Rational[35,2]},{19.5,17.5}]],InsetBox[FormBox["51",TraditionalForm],
+NCache[{Rational[41,2],Rational[35,2]},{20.5,17.5}]],InsetBox[FormBox["7",TraditionalForm],
+NCache[{Rational[43,2],Rational[35,2]},{21.5,17.5}]],InsetBox[FormBox["177",TraditionalForm],
+NCache[{Rational[45,2],Rational[35,2]},{22.5,17.5}]],InsetBox[FormBox["3699",TraditionalForm],
+NCache[{Rational[47,2],Rational[35,2]},{23.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[35,2]},{24.5,17.5}]],InsetBox[FormBox["39",TraditionalForm],
+NCache[{Rational[51,2],Rational[35,2]},{25.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[53,2],Rational[35,2]},{26.5,17.5}]],InsetBox[FormBox["60",TraditionalForm],
+NCache[{Rational[55,2],Rational[35,2]},{27.5,17.5}]],InsetBox[FormBox["4677",TraditionalForm],
+NCache[{Rational[57,2],Rational[35,2]},{28.5,17.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[35,2]},{29.5,17.5}]],InsetBox[FormBox["1013",TraditionalForm],
+NCache[{Rational[1,2],Rational[33,2]},{0.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[33,2]},{1.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[33,2]},{2.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[33,2]},{3.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[33,2]},{4.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[33,2]},{5.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[33,2]},{6.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[33,2]},{7.5,16.5}]],InsetBox[FormBox["1216",TraditionalForm],
+NCache[{Rational[17,2],Rational[33,2]},{8.5,16.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[19,2],Rational[33,2]},{9.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[33,2]},{10.5,16.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[23,2],Rational[33,2]},{11.5,16.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[25,2],Rational[33,2]},{12.5,16.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[27,2],Rational[33,2]},{13.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[33,2]},{14.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[33,2]},{15.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[33,2]},{16.5,16.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[35,2],Rational[33,2]},{17.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[33,2]},{18.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[33,2]},{19.5,16.5}]],InsetBox[FormBox["136",TraditionalForm],
+NCache[{Rational[41,2],Rational[33,2]},{20.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[33,2]},{21.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[33,2]},{22.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[33,2]},{23.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[33,2]},{24.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[33,2]},{25.5,16.5}]],InsetBox[FormBox["347",TraditionalForm],
+NCache[{Rational[53,2],Rational[33,2]},{26.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[33,2]},{27.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[33,2]},{28.5,16.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[33,2]},{29.5,16.5}]],InsetBox[FormBox["3616",TraditionalForm],
+NCache[{Rational[1,2],Rational[31,2]},{0.5,15.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[3,2],Rational[31,2]},{1.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[31,2]},{2.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[31,2]},{3.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[31,2]},{4.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[31,2]},{5.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[31,2]},{6.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[31,2]},{7.5,15.5}]],InsetBox[FormBox["219",TraditionalForm],
+NCache[{Rational[17,2],Rational[31,2]},{8.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[31,2]},{9.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[31,2]},{10.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[31,2]},{11.5,15.5}]],InsetBox[FormBox["632",TraditionalForm],
+NCache[{Rational[25,2],Rational[31,2]},{12.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[31,2]},{13.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[31,2]},{14.5,15.5}]],InsetBox[FormBox["1447",TraditionalForm],
+NCache[{Rational[31,2],Rational[31,2]},{15.5,15.5}]],InsetBox[FormBox["134",TraditionalForm],
+NCache[{Rational[33,2],Rational[31,2]},{16.5,15.5}]],InsetBox[FormBox["38",TraditionalForm],
+NCache[{Rational[35,2],Rational[31,2]},{17.5,15.5}]],InsetBox[FormBox["83",TraditionalForm],
+NCache[{Rational[37,2],Rational[31,2]},{18.5,15.5}]],InsetBox[FormBox["27",TraditionalForm],
+NCache[{Rational[39,2],Rational[31,2]},{19.5,15.5}]],InsetBox[FormBox["6931",TraditionalForm],
+NCache[{Rational[41,2],Rational[31,2]},{20.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[31,2]},{21.5,15.5}]],InsetBox[FormBox["2776",TraditionalForm],
+NCache[{Rational[45,2],Rational[31,2]},{22.5,15.5}]],InsetBox[FormBox["30",TraditionalForm],
+NCache[{Rational[47,2],Rational[31,2]},{23.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[31,2]},{24.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[31,2]},{25.5,15.5}]],InsetBox[FormBox["1575",TraditionalForm],
+NCache[{Rational[53,2],Rational[31,2]},{26.5,15.5}]],InsetBox[FormBox["445",TraditionalForm],
+NCache[{Rational[55,2],Rational[31,2]},{27.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[31,2]},{28.5,15.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[31,2]},{29.5,15.5}]],InsetBox[FormBox["1146",TraditionalForm],
+NCache[{Rational[1,2],Rational[29,2]},{0.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[29,2]},{1.5,14.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[5,2],Rational[29,2]},{2.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[29,2]},{3.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[29,2]},{4.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[29,2]},{5.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[29,2]},{6.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[29,2]},{7.5,14.5}]],InsetBox[FormBox["761",TraditionalForm],
+NCache[{Rational[17,2],Rational[29,2]},{8.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[29,2]},{9.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[29,2]},{10.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[29,2]},{11.5,14.5}]],InsetBox[FormBox["1459",TraditionalForm],
+NCache[{Rational[25,2],Rational[29,2]},{12.5,14.5}]],InsetBox[FormBox["775",TraditionalForm],
+NCache[{Rational[27,2],Rational[29,2]},{13.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[29,2]},{14.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[29,2]},{15.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[29,2]},{16.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[29,2]},{17.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[29,2]},{18.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[29,2]},{19.5,14.5}]],InsetBox[FormBox["823",TraditionalForm],
+NCache[{Rational[41,2],Rational[29,2]},{20.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[29,2]},{21.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[29,2]},{22.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[29,2]},{23.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[29,2]},{24.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[29,2]},{25.5,14.5}]],InsetBox[FormBox["671",TraditionalForm],
+NCache[{Rational[53,2],Rational[29,2]},{26.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[29,2]},{27.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[29,2]},{28.5,14.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[29,2]},{29.5,14.5}]],InsetBox[FormBox["18",TraditionalForm],
+NCache[{Rational[1,2],Rational[27,2]},{0.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[27,2]},{1.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[27,2]},{2.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[27,2]},{3.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[27,2]},{4.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[27,2]},{5.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[27,2]},{6.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[27,2]},{7.5,13.5}]],InsetBox[FormBox["320",TraditionalForm],
+NCache[{Rational[17,2],Rational[27,2]},{8.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[27,2]},{9.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[27,2]},{10.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[27,2]},{11.5,13.5}]],InsetBox[FormBox["18",TraditionalForm],
+NCache[{Rational[25,2],Rational[27,2]},{12.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[27,2]},{13.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[27,2]},{14.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[27,2]},{15.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[27,2]},{16.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[27,2]},{17.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[27,2]},{18.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[27,2]},{19.5,13.5}]],InsetBox[FormBox["10",TraditionalForm],
+NCache[{Rational[41,2],Rational[27,2]},{20.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[27,2]},{21.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[27,2]},{22.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[27,2]},{23.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[27,2]},{24.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[27,2]},{25.5,13.5}]],InsetBox[FormBox["409",TraditionalForm],
+NCache[{Rational[53,2],Rational[27,2]},{26.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[27,2]},{27.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[27,2]},{28.5,13.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[27,2]},{29.5,13.5}]],InsetBox[FormBox["3429",TraditionalForm],
+NCache[{Rational[1,2],Rational[25,2]},{0.5,12.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[3,2],Rational[25,2]},{1.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[25,2]},{2.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[25,2]},{3.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[25,2]},{4.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[25,2]},{5.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[25,2]},{6.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[25,2]},{7.5,12.5}]],InsetBox[FormBox["1287",TraditionalForm],
+NCache[{Rational[17,2],Rational[25,2]},{8.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[25,2]},{9.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[25,2]},{10.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[25,2]},{11.5,12.5}]],InsetBox[FormBox["1713",TraditionalForm],
+NCache[{Rational[25,2],Rational[25,2]},{12.5,12.5}]],InsetBox[FormBox["208",TraditionalForm],
+NCache[{Rational[27,2],Rational[25,2]},{13.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[25,2]},{14.5,12.5}]],InsetBox[FormBox["380",TraditionalForm],
+NCache[{Rational[31,2],Rational[25,2]},{15.5,12.5}]],InsetBox[FormBox["93",TraditionalForm],
+NCache[{Rational[33,2],Rational[25,2]},{16.5,12.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[35,2],Rational[25,2]},{17.5,12.5}]],InsetBox[FormBox["89",TraditionalForm],
+NCache[{Rational[37,2],Rational[25,2]},{18.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[25,2]},{19.5,12.5}]],InsetBox[FormBox["1647",TraditionalForm],
+NCache[{Rational[41,2],Rational[25,2]},{20.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[25,2]},{21.5,12.5}]],InsetBox[FormBox["452",TraditionalForm],
+NCache[{Rational[45,2],Rational[25,2]},{22.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[25,2]},{23.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[25,2]},{24.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[25,2]},{25.5,12.5}]],InsetBox[FormBox["757",TraditionalForm],
+NCache[{Rational[53,2],Rational[25,2]},{26.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[25,2]},{27.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[25,2]},{28.5,12.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[25,2]},{29.5,12.5}]],InsetBox[FormBox["10618",TraditionalForm],
+NCache[{Rational[1,2],Rational[23,2]},{0.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[23,2]},{1.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[23,2]},{2.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[23,2]},{3.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[23,2]},{4.5,11.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[11,2],Rational[23,2]},{5.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[23,2]},{6.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[23,2]},{7.5,11.5}]],InsetBox[FormBox["9470",TraditionalForm],
+NCache[{Rational[17,2],Rational[23,2]},{8.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[23,2]},{9.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[23,2]},{10.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[23,2]},{11.5,11.5}]],InsetBox[FormBox["480",TraditionalForm],
+NCache[{Rational[25,2],Rational[23,2]},{12.5,11.5}]],InsetBox[FormBox["199",TraditionalForm],
+NCache[{Rational[27,2],Rational[23,2]},{13.5,11.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[29,2],Rational[23,2]},{14.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[23,2]},{15.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[23,2]},{16.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[23,2]},{17.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[23,2]},{18.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[23,2]},{19.5,11.5}]],InsetBox[FormBox["1013",TraditionalForm],
+NCache[{Rational[41,2],Rational[23,2]},{20.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[23,2]},{21.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[23,2]},{22.5,11.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[47,2],Rational[23,2]},{23.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[23,2]},{24.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[23,2]},{25.5,11.5}]],InsetBox[FormBox["250",TraditionalForm],
+NCache[{Rational[53,2],Rational[23,2]},{26.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[23,2]},{27.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[23,2]},{28.5,11.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[23,2]},{29.5,11.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[1,2],Rational[21,2]},{0.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[21,2]},{1.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[21,2]},{2.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[21,2]},{3.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[21,2]},{4.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[21,2]},{5.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[21,2]},{6.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[21,2]},{7.5,10.5}]],InsetBox[FormBox["106",TraditionalForm],
+NCache[{Rational[17,2],Rational[21,2]},{8.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[21,2]},{9.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[21,2]},{10.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[21,2]},{11.5,10.5}]],InsetBox[FormBox["73",TraditionalForm],
+NCache[{Rational[25,2],Rational[21,2]},{12.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[21,2]},{13.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[21,2]},{14.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[21,2]},{15.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[21,2]},{16.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[21,2]},{17.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[21,2]},{18.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[21,2]},{19.5,10.5}]],InsetBox[FormBox["9",TraditionalForm],
+NCache[{Rational[41,2],Rational[21,2]},{20.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[21,2]},{21.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[21,2]},{22.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[21,2]},{23.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[21,2]},{24.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[21,2]},{25.5,10.5}]],InsetBox[FormBox["7",TraditionalForm],
+NCache[{Rational[53,2],Rational[21,2]},{26.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[21,2]},{27.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[21,2]},{28.5,10.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[21,2]},{29.5,10.5}]],InsetBox[FormBox["9",TraditionalForm],
+NCache[{Rational[1,2],Rational[19,2]},{0.5,9.5}]],InsetBox[FormBox["3032",TraditionalForm],
+NCache[{Rational[3,2],Rational[19,2]},{1.5,9.5}]],InsetBox[FormBox["313",TraditionalForm],
+NCache[{Rational[5,2],Rational[19,2]},{2.5,9.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[19,2]},{3.5,9.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[19,2]},{4.5,9.5}]],InsetBox[FormBox["3836",TraditionalForm],
+NCache[{Rational[11,2],Rational[19,2]},{5.5,9.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[19,2]},{6.5,9.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[19,2]},{7.5,9.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[17,2],Rational[19,2]},{8.5,9.5}]],InsetBox[FormBox["114",TraditionalForm],
+NCache[{Rational[19,2],Rational[19,2]},{9.5,9.5}]],InsetBox[FormBox["577",TraditionalForm],
+NCache[{Rational[21,2],Rational[19,2]},{10.5,9.5}]],InsetBox[FormBox["148",TraditionalForm],
+NCache[{Rational[23,2],Rational[19,2]},{11.5,9.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[25,2],Rational[19,2]},{12.5,9.5}]],InsetBox[FormBox["24",TraditionalForm],
+NCache[{Rational[27,2],Rational[19,2]},{13.5,9.5}]],InsetBox[FormBox["1321",TraditionalForm],
+NCache[{Rational[29,2],Rational[19,2]},{14.5,9.5}]],InsetBox[FormBox["279",TraditionalForm],
+NCache[{Rational[31,2],Rational[19,2]},{15.5,9.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[19,2]},{16.5,9.5}]],InsetBox[FormBox["507",TraditionalForm],
+NCache[{Rational[35,2],Rational[19,2]},{17.5,9.5}]],InsetBox[FormBox["192",TraditionalForm],
+NCache[{Rational[37,2],Rational[19,2]},{18.5,9.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[19,2]},{19.5,9.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[41,2],Rational[19,2]},{20.5,9.5}]],InsetBox[FormBox["2507",TraditionalForm],
+NCache[{Rational[43,2],Rational[19,2]},{21.5,9.5}]],InsetBox[FormBox["783",TraditionalForm],
+NCache[{Rational[45,2],Rational[19,2]},{22.5,9.5}]],InsetBox[FormBox["2216",TraditionalForm],
+NCache[{Rational[47,2],Rational[19,2]},{23.5,9.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[19,2]},{24.5,9.5}]],InsetBox[FormBox["1919",TraditionalForm],
+NCache[{Rational[51,2],Rational[19,2]},{25.5,9.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[53,2],Rational[19,2]},{26.5,9.5}]],InsetBox[FormBox["434",TraditionalForm],
+NCache[{Rational[55,2],Rational[19,2]},{27.5,9.5}]],InsetBox[FormBox["345",TraditionalForm],
+NCache[{Rational[57,2],Rational[19,2]},{28.5,9.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[19,2]},{29.5,9.5}]],InsetBox[FormBox["3025",TraditionalForm],
+NCache[{Rational[1,2],Rational[17,2]},{0.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[17,2]},{1.5,8.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[5,2],Rational[17,2]},{2.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[17,2]},{3.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[17,2]},{4.5,8.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[11,2],Rational[17,2]},{5.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[17,2]},{6.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[17,2]},{7.5,8.5}]],InsetBox[FormBox["1663",TraditionalForm],
+NCache[{Rational[17,2],Rational[17,2]},{8.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[17,2]},{9.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[17,2]},{10.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[17,2]},{11.5,8.5}]],InsetBox[FormBox["1347",TraditionalForm],
+NCache[{Rational[25,2],Rational[17,2]},{12.5,8.5}]],InsetBox[FormBox["193",TraditionalForm],
+NCache[{Rational[27,2],Rational[17,2]},{13.5,8.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[29,2],Rational[17,2]},{14.5,8.5}]],InsetBox[FormBox["1765",TraditionalForm],
+NCache[{Rational[31,2],Rational[17,2]},{15.5,8.5}]],InsetBox[FormBox["221",TraditionalForm],
+NCache[{Rational[33,2],Rational[17,2]},{16.5,8.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[35,2],Rational[17,2]},{17.5,8.5}]],InsetBox[FormBox["20",TraditionalForm],
+NCache[{Rational[37,2],Rational[17,2]},{18.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[17,2]},{19.5,8.5}]],InsetBox[FormBox["15135",TraditionalForm],
+NCache[{Rational[41,2],Rational[17,2]},{20.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[17,2]},{21.5,8.5}]],InsetBox[FormBox["20989",TraditionalForm],
+NCache[{Rational[45,2],Rational[17,2]},{22.5,8.5}]],InsetBox[FormBox["273",TraditionalForm],
+NCache[{Rational[47,2],Rational[17,2]},{23.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[17,2]},{24.5,8.5}]],InsetBox[FormBox["14",TraditionalForm],
+NCache[{Rational[51,2],Rational[17,2]},{25.5,8.5}]],InsetBox[FormBox["1193",TraditionalForm],
+NCache[{Rational[53,2],Rational[17,2]},{26.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[17,2]},{27.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[17,2]},{28.5,8.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[17,2]},{29.5,8.5}]],InsetBox[FormBox["7680",TraditionalForm],
+NCache[{Rational[1,2],Rational[15,2]},{0.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[15,2]},{1.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[15,2]},{2.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[15,2]},{3.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[15,2]},{4.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[15,2]},{5.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[15,2]},{6.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[15,2]},{7.5,7.5}]],InsetBox[FormBox["4423",TraditionalForm],
+NCache[{Rational[17,2],Rational[15,2]},{8.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[15,2]},{9.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[15,2]},{10.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[15,2]},{11.5,7.5}]],InsetBox[FormBox["654",TraditionalForm],
+NCache[{Rational[25,2],Rational[15,2]},{12.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[15,2]},{13.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[15,2]},{14.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[15,2]},{15.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[15,2]},{16.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[15,2]},{17.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[15,2]},{18.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[15,2]},{19.5,7.5}]],InsetBox[FormBox["964",TraditionalForm],
+NCache[{Rational[41,2],Rational[15,2]},{20.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[15,2]},{21.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[15,2]},{22.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[15,2]},{23.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[15,2]},{24.5,7.5}]],InsetBox[FormBox["11",TraditionalForm],
+NCache[{Rational[51,2],Rational[15,2]},{25.5,7.5}]],InsetBox[FormBox["787",TraditionalForm],
+NCache[{Rational[53,2],Rational[15,2]},{26.5,7.5}]],InsetBox[FormBox["23",TraditionalForm],
+NCache[{Rational[55,2],Rational[15,2]},{27.5,7.5}]],InsetBox[FormBox["11",TraditionalForm],
+NCache[{Rational[57,2],Rational[15,2]},{28.5,7.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[15,2]},{29.5,7.5}]],InsetBox[FormBox["2970",TraditionalForm],
+NCache[{Rational[1,2],Rational[13,2]},{0.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[13,2]},{1.5,6.5}]],InsetBox[FormBox["64",TraditionalForm],
+NCache[{Rational[5,2],Rational[13,2]},{2.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[13,2]},{3.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[13,2]},{4.5,6.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[11,2],Rational[13,2]},{5.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[13,2]},{6.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[13,2]},{7.5,6.5}]],InsetBox[FormBox["1340",TraditionalForm],
+NCache[{Rational[17,2],Rational[13,2]},{8.5,6.5}]],InsetBox[FormBox["26",TraditionalForm],
+NCache[{Rational[19,2],Rational[13,2]},{9.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[13,2]},{10.5,6.5}]],InsetBox[FormBox["108",TraditionalForm],
+NCache[{Rational[23,2],Rational[13,2]},{11.5,6.5}]],InsetBox[FormBox["1741",TraditionalForm],
+NCache[{Rational[25,2],Rational[13,2]},{12.5,6.5}]],InsetBox[FormBox["556",TraditionalForm],
+NCache[{Rational[27,2],Rational[13,2]},{13.5,6.5}]],InsetBox[FormBox["1725",TraditionalForm],
+NCache[{Rational[29,2],Rational[13,2]},{14.5,6.5}]],InsetBox[FormBox["1591",TraditionalForm],
+NCache[{Rational[31,2],Rational[13,2]},{15.5,6.5}]],InsetBox[FormBox["97",TraditionalForm],
+NCache[{Rational[33,2],Rational[13,2]},{16.5,6.5}]],InsetBox[FormBox["1034",TraditionalForm],
+NCache[{Rational[35,2],Rational[13,2]},{17.5,6.5}]],InsetBox[FormBox["371",TraditionalForm],
+NCache[{Rational[37,2],Rational[13,2]},{18.5,6.5}]],InsetBox[FormBox["3",TraditionalForm],
+NCache[{Rational[39,2],Rational[13,2]},{19.5,6.5}]],InsetBox[FormBox["770",TraditionalForm],
+NCache[{Rational[41,2],Rational[13,2]},{20.5,6.5}]],InsetBox[FormBox["1827",TraditionalForm],
+NCache[{Rational[43,2],Rational[13,2]},{21.5,6.5}]],InsetBox[FormBox["730",TraditionalForm],
+NCache[{Rational[45,2],Rational[13,2]},{22.5,6.5}]],InsetBox[FormBox["3",TraditionalForm],
+NCache[{Rational[47,2],Rational[13,2]},{23.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[13,2]},{24.5,6.5}]],InsetBox[FormBox["3663",TraditionalForm],
+NCache[{Rational[51,2],Rational[13,2]},{25.5,6.5}]],InsetBox[FormBox["2204",TraditionalForm],
+NCache[{Rational[53,2],Rational[13,2]},{26.5,6.5}]],InsetBox[FormBox["1660",TraditionalForm],
+NCache[{Rational[55,2],Rational[13,2]},{27.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[13,2]},{28.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[13,2]},{29.5,6.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[1,2],Rational[11,2]},{0.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[11,2]},{1.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[11,2]},{2.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[11,2]},{3.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[11,2]},{4.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[11,2]},{5.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[11,2]},{6.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[11,2]},{7.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[17,2],Rational[11,2]},{8.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[11,2]},{9.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[11,2]},{10.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[11,2]},{11.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[25,2],Rational[11,2]},{12.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[11,2]},{13.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[11,2]},{14.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[11,2]},{15.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[11,2]},{16.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[11,2]},{17.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[11,2]},{18.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[11,2]},{19.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[41,2],Rational[11,2]},{20.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[11,2]},{21.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[11,2]},{22.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[11,2]},{23.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[11,2]},{24.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[11,2]},{25.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[53,2],Rational[11,2]},{26.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[11,2]},{27.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[11,2]},{28.5,5.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[11,2]},{29.5,5.5}]],InsetBox[FormBox["1295",TraditionalForm],
+NCache[{Rational[1,2],Rational[9,2]},{0.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[9,2]},{1.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[9,2]},{2.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[9,2]},{3.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[9,2]},{4.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[9,2]},{5.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[9,2]},{6.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[9,2]},{7.5,4.5}]],InsetBox[FormBox["1557",TraditionalForm],
+NCache[{Rational[17,2],Rational[9,2]},{8.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[9,2]},{9.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[9,2]},{10.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[9,2]},{11.5,4.5}]],InsetBox[FormBox["733",TraditionalForm],
+NCache[{Rational[25,2],Rational[9,2]},{12.5,4.5}]],InsetBox[FormBox["146",TraditionalForm],
+NCache[{Rational[27,2],Rational[9,2]},{13.5,4.5}]],InsetBox[FormBox["60",TraditionalForm],
+NCache[{Rational[29,2],Rational[9,2]},{14.5,4.5}]],InsetBox[FormBox["61",TraditionalForm],
+NCache[{Rational[31,2],Rational[9,2]},{15.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[9,2]},{16.5,4.5}]],InsetBox[FormBox["50",TraditionalForm],
+NCache[{Rational[35,2],Rational[9,2]},{17.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[9,2]},{18.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[9,2]},{19.5,4.5}]],InsetBox[FormBox["801",TraditionalForm],
+NCache[{Rational[41,2],Rational[9,2]},{20.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[9,2]},{21.5,4.5}]],InsetBox[FormBox["2838",TraditionalForm],
+NCache[{Rational[45,2],Rational[9,2]},{22.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[9,2]},{23.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[9,2]},{24.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[9,2]},{25.5,4.5}]],InsetBox[FormBox["669",TraditionalForm],
+NCache[{Rational[53,2],Rational[9,2]},{26.5,4.5}]],InsetBox[FormBox["213",TraditionalForm],
+NCache[{Rational[55,2],Rational[9,2]},{27.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[9,2]},{28.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[9,2]},{29.5,4.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[1,2],Rational[7,2]},{0.5,3.5}]],InsetBox[FormBox["374",TraditionalForm],
+NCache[{Rational[3,2],Rational[7,2]},{1.5,3.5}]],InsetBox[FormBox["106",TraditionalForm],
+NCache[{Rational[5,2],Rational[7,2]},{2.5,3.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[7,2]},{3.5,3.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[7,2]},{4.5,3.5}]],InsetBox[FormBox["719",TraditionalForm],
+NCache[{Rational[11,2],Rational[7,2]},{5.5,3.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[7,2]},{6.5,3.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[7,2]},{7.5,3.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[17,2],Rational[7,2]},{8.5,3.5}]],InsetBox[FormBox["22",TraditionalForm],
+NCache[{Rational[19,2],Rational[7,2]},{9.5,3.5}]],InsetBox[FormBox["763",TraditionalForm],
+NCache[{Rational[21,2],Rational[7,2]},{10.5,3.5}]],InsetBox[FormBox["108",TraditionalForm],
+NCache[{Rational[23,2],Rational[7,2]},{11.5,3.5}]],InsetBox[FormBox["26",TraditionalForm],
+NCache[{Rational[25,2],Rational[7,2]},{12.5,3.5}]],InsetBox[FormBox["136",TraditionalForm],
+NCache[{Rational[27,2],Rational[7,2]},{13.5,3.5}]],InsetBox[FormBox["703",TraditionalForm],
+NCache[{Rational[29,2],Rational[7,2]},{14.5,3.5}]],InsetBox[FormBox["499",TraditionalForm],
+NCache[{Rational[31,2],Rational[7,2]},{15.5,3.5}]],InsetBox[FormBox["172",TraditionalForm],
+NCache[{Rational[33,2],Rational[7,2]},{16.5,3.5}]],InsetBox[FormBox["830",TraditionalForm],
+NCache[{Rational[35,2],Rational[7,2]},{17.5,3.5}]],InsetBox[FormBox["388",TraditionalForm],
+NCache[{Rational[37,2],Rational[7,2]},{18.5,3.5}]],InsetBox[FormBox["2",TraditionalForm],
+NCache[{Rational[39,2],Rational[7,2]},{19.5,3.5}]],InsetBox[FormBox["55",TraditionalForm],
+NCache[{Rational[41,2],Rational[7,2]},{20.5,3.5}]],InsetBox[FormBox["1258",TraditionalForm],
+NCache[{Rational[43,2],Rational[7,2]},{21.5,3.5}]],InsetBox[FormBox["594",TraditionalForm],
+NCache[{Rational[45,2],Rational[7,2]},{22.5,3.5}]],InsetBox[FormBox["1998",TraditionalForm],
+NCache[{Rational[47,2],Rational[7,2]},{23.5,3.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[7,2]},{24.5,3.5}]],InsetBox[FormBox["860",TraditionalForm],
+NCache[{Rational[51,2],Rational[7,2]},{25.5,3.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[53,2],Rational[7,2]},{26.5,3.5}]],InsetBox[FormBox["523",TraditionalForm],
+NCache[{Rational[55,2],Rational[7,2]},{27.5,3.5}]],InsetBox[FormBox["1334",TraditionalForm],
+NCache[{Rational[57,2],Rational[7,2]},{28.5,3.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[7,2]},{29.5,3.5}]],InsetBox[FormBox["837",TraditionalForm],
+NCache[{Rational[1,2],Rational[5,2]},{0.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[5,2]},{1.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[5,2]},{2.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[5,2]},{3.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[5,2]},{4.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[5,2]},{5.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[5,2]},{6.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[5,2]},{7.5,2.5}]],InsetBox[FormBox["1028",TraditionalForm],
+NCache[{Rational[17,2],Rational[5,2]},{8.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[5,2]},{9.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[5,2]},{10.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[5,2]},{11.5,2.5}]],InsetBox[FormBox["1359",TraditionalForm],
+NCache[{Rational[25,2],Rational[5,2]},{12.5,2.5}]],InsetBox[FormBox["297",TraditionalForm],
+NCache[{Rational[27,2],Rational[5,2]},{13.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[5,2]},{14.5,2.5}]],InsetBox[FormBox["268",TraditionalForm],
+NCache[{Rational[31,2],Rational[5,2]},{15.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[5,2]},{16.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[5,2]},{17.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[5,2]},{18.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[5,2]},{19.5,2.5}]],InsetBox[FormBox["836",TraditionalForm],
+NCache[{Rational[41,2],Rational[5,2]},{20.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[5,2]},{21.5,2.5}]],InsetBox[FormBox["945",TraditionalForm],
+NCache[{Rational[45,2],Rational[5,2]},{22.5,2.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[47,2],Rational[5,2]},{23.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[5,2]},{24.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[5,2]},{25.5,2.5}]],InsetBox[FormBox["188",TraditionalForm],
+NCache[{Rational[53,2],Rational[5,2]},{26.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[5,2]},{27.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[5,2]},{28.5,2.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[5,2]},{29.5,2.5}]],InsetBox[FormBox["8929",TraditionalForm],
+NCache[{Rational[1,2],Rational[3,2]},{0.5,1.5}]],InsetBox[FormBox["377",TraditionalForm],
+NCache[{Rational[3,2],Rational[3,2]},{1.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[3,2]},{2.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[3,2]},{3.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[3,2]},{4.5,1.5}]],InsetBox[FormBox["190",TraditionalForm],
+NCache[{Rational[11,2],Rational[3,2]},{5.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[3,2]},{6.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[3,2]},{7.5,1.5}]],InsetBox[FormBox["328",TraditionalForm],
+NCache[{Rational[17,2],Rational[3,2]},{8.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[3,2]},{9.5,1.5}]],InsetBox[FormBox["362",TraditionalForm],
+NCache[{Rational[21,2],Rational[3,2]},{10.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[3,2]},{11.5,1.5}]],InsetBox[FormBox["264",TraditionalForm],
+NCache[{Rational[25,2],Rational[3,2]},{12.5,1.5}]],InsetBox[FormBox["23",TraditionalForm],
+NCache[{Rational[27,2],Rational[3,2]},{13.5,1.5}]],InsetBox[FormBox["1",TraditionalForm],
+NCache[{Rational[29,2],Rational[3,2]},{14.5,1.5}]],InsetBox[FormBox["500",TraditionalForm],
+NCache[{Rational[31,2],Rational[3,2]},{15.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[3,2]},{16.5,1.5}]],InsetBox[FormBox["58",TraditionalForm],
+NCache[{Rational[35,2],Rational[3,2]},{17.5,1.5}]],InsetBox[FormBox["235",TraditionalForm],
+NCache[{Rational[37,2],Rational[3,2]},{18.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[3,2]},{19.5,1.5}]],InsetBox[FormBox["149",TraditionalForm],
+NCache[{Rational[41,2],Rational[3,2]},{20.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[3,2]},{21.5,1.5}]],InsetBox[FormBox["194",TraditionalForm],
+NCache[{Rational[45,2],Rational[3,2]},{22.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[3,2]},{23.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[3,2]},{24.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[3,2]},{25.5,1.5}]],InsetBox[FormBox["158",TraditionalForm],
+NCache[{Rational[53,2],Rational[3,2]},{26.5,1.5}]],InsetBox[FormBox["373",TraditionalForm],
+NCache[{Rational[55,2],Rational[3,2]},{27.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[3,2]},{28.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[3,2]},{29.5,1.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[1,2],Rational[1,2]},{0.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[3,2],Rational[1,2]},{1.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[5,2],Rational[1,2]},{2.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[7,2],Rational[1,2]},{3.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[9,2],Rational[1,2]},{4.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[11,2],Rational[1,2]},{5.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[13,2],Rational[1,2]},{6.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[15,2],Rational[1,2]},{7.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[17,2],Rational[1,2]},{8.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[19,2],Rational[1,2]},{9.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[21,2],Rational[1,2]},{10.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[23,2],Rational[1,2]},{11.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[25,2],Rational[1,2]},{12.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[27,2],Rational[1,2]},{13.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[29,2],Rational[1,2]},{14.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[31,2],Rational[1,2]},{15.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[33,2],Rational[1,2]},{16.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[35,2],Rational[1,2]},{17.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[37,2],Rational[1,2]},{18.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[39,2],Rational[1,2]},{19.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[41,2],Rational[1,2]},{20.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[43,2],Rational[1,2]},{21.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[45,2],Rational[1,2]},{22.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[47,2],Rational[1,2]},{23.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[49,2],Rational[1,2]},{24.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[51,2],Rational[1,2]},{25.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[53,2],Rational[1,2]},{26.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[55,2],Rational[1,2]},{27.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[57,2],Rational[1,2]},{28.5,0.5}]],InsetBox[FormBox["0",TraditionalForm],
+NCache[{Rational[59,2],Rational[1,2]},{29.5,0.5}]]},Frame -> True,FrameLabel -> {{FormBox[
+StyleBox["\"Pierwsza litera\"",16,GrayLevel[0],StripOnInput -> False],TraditionalForm],FormBox[
+StyleBox["\"Pierwsza litera\"",16,GrayLevel[0],StripOnInput -> False],TraditionalForm]},{FormBox[
+StyleBox["\"Druga litera\"",16,GrayLevel[0],StripOnInput -> False],TraditionalForm],FormBox[
+StyleBox["\"Druga litera\"",16,GrayLevel[0],StripOnInput -> False],TraditionalForm]}},
+FrameTicks -> {{{{29.5,FormBox["\"a\"",TraditionalForm]},{28.5,FormBox["\"b\"",TraditionalForm]},{27.5,FormBox[
+"\"c\"",TraditionalForm]},{26.5,FormBox["\"\[CHacek]\"",TraditionalForm]},{25.5,FormBox[
+"\"\[CAcute]\"",TraditionalForm]},{24.5,FormBox["\"d\"",TraditionalForm]},{23.5,FormBox[
+"\"d\[ZHacek]\"",TraditionalForm]},{22.5,FormBox["\"\:0111\"",TraditionalForm]},{21.5,FormBox[
+"\"e\"",TraditionalForm]},{20.5,FormBox["\"f\"",TraditionalForm]},{19.5,FormBox["\"g\"",
+TraditionalForm]},{18.5,FormBox["\"h\"",TraditionalForm]},{17.5,FormBox["\"i\"",TraditionalForm]},{16.5,FormBox[
+"\"j\"",TraditionalForm]},{15.5,FormBox["\"k\"",TraditionalForm]},{14.5,FormBox["\"l\"",
+TraditionalForm]},{13.5,FormBox["\"lj\"",TraditionalForm]},{12.5,FormBox["\"m\"",
+TraditionalForm]},{11.5,FormBox["\"n\"",TraditionalForm]},{10.5,FormBox["\"nj\"",
+TraditionalForm]},{9.5,FormBox["\"o\"",TraditionalForm]},{8.5,FormBox["\"p\"",TraditionalForm]},{7.5,FormBox[
+"\"r\"",TraditionalForm]},{6.5,FormBox["\"s\"",TraditionalForm]},{5.5,FormBox["\"\[SHacek]\"",
+TraditionalForm]},{4.5,FormBox["\"t\"",TraditionalForm]},{3.5,FormBox["\"u\"",TraditionalForm]},{2.5,FormBox[
+"\"v\"",TraditionalForm]},{1.5,FormBox["\"z\"",TraditionalForm]},{0.5,FormBox["\"\[ZHacek]\"",
+TraditionalForm]}},{{29.5,FormBox["\"a\"",TraditionalForm]},{28.5,FormBox["\"b\"",
+TraditionalForm]},{27.5,FormBox["\"c\"",TraditionalForm]},{26.5,FormBox["\"\[CHacek]\"",
+TraditionalForm]},{25.5,FormBox["\"\[CAcute]\"",TraditionalForm]},{24.5,FormBox["\"d\"",
+TraditionalForm]},{23.5,FormBox["\"d\[ZHacek]\"",TraditionalForm]},{22.5,FormBox[
+"\"\:0111\"",TraditionalForm]},{21.5,FormBox["\"e\"",TraditionalForm]},{20.5,FormBox[
+"\"f\"",TraditionalForm]},{19.5,FormBox["\"g\"",TraditionalForm]},{18.5,FormBox["\"h\"",
+TraditionalForm]},{17.5,FormBox["\"i\"",TraditionalForm]},{16.5,FormBox["\"j\"",TraditionalForm]},{15.5,FormBox[
+"\"k\"",TraditionalForm]},{14.5,FormBox["\"l\"",TraditionalForm]},{13.5,FormBox["\"lj\"",
+TraditionalForm]},{12.5,FormBox["\"m\"",TraditionalForm]},{11.5,FormBox["\"n\"",TraditionalForm]},{10.5,FormBox[
+"\"nj\"",TraditionalForm]},{9.5,FormBox["\"o\"",TraditionalForm]},{8.5,FormBox["\"p\"",
+TraditionalForm]},{7.5,FormBox["\"r\"",TraditionalForm]},{6.5,FormBox["\"s\"",TraditionalForm]},{5.5,FormBox[
+"\"\[SHacek]\"",TraditionalForm]},{4.5,FormBox["\"t\"",TraditionalForm]},{3.5,FormBox[
+"\"u\"",TraditionalForm]},{2.5,FormBox["\"v\"",TraditionalForm]},{1.5,FormBox["\"z\"",
+TraditionalForm]},{0.5,FormBox["\"\[ZHacek]\"",TraditionalForm]}}},{{{0.5,FormBox[
+"\"a\"",TraditionalForm]},{1.5,FormBox["\"b\"",TraditionalForm]},{2.5,FormBox["\"c\"",
+TraditionalForm]},{3.5,FormBox["\"\[CHacek]\"",TraditionalForm]},{4.5,FormBox["\"\[CAcute]\"",
+TraditionalForm]},{5.5,FormBox["\"d\"",TraditionalForm]},{6.5,FormBox["\"d\[ZHacek]\"",
+TraditionalForm]},{7.5,FormBox["\"\:0111\"",TraditionalForm]},{8.5,FormBox["\"e\"",
+TraditionalForm]},{9.5,FormBox["\"f\"",TraditionalForm]},{10.5,FormBox["\"g\"",TraditionalForm]},{11.5,FormBox[
+"\"h\"",TraditionalForm]},{12.5,FormBox["\"i\"",TraditionalForm]},{13.5,FormBox["\"j\"",
+TraditionalForm]},{14.5,FormBox["\"k\"",TraditionalForm]},{15.5,FormBox["\"l\"",TraditionalForm]},{16.5,FormBox[
+"\"lj\"",TraditionalForm]},{17.5,FormBox["\"m\"",TraditionalForm]},{18.5,FormBox[
+"\"n\"",TraditionalForm]},{19.5,FormBox["\"nj\"",TraditionalForm]},{20.5,FormBox[
+"\"o\"",TraditionalForm]},{21.5,FormBox["\"p\"",TraditionalForm]},{22.5,FormBox["\"r\"",
+TraditionalForm]},{23.5,FormBox["\"s\"",TraditionalForm]},{24.5,FormBox["\"\[SHacek]\"",
+TraditionalForm]},{25.5,FormBox["\"t\"",TraditionalForm]},{26.5,FormBox["\"u\"",TraditionalForm]},{27.5,FormBox[
+"\"v\"",TraditionalForm]},{28.5,FormBox["\"z\"",TraditionalForm]},{29.5,FormBox["\"\[ZHacek]\"",
+TraditionalForm]}},{{0.5,FormBox["\"a\"",TraditionalForm]},{1.5,FormBox["\"b\"",TraditionalForm]},{2.5,FormBox[
+"\"c\"",TraditionalForm]},{3.5,FormBox["\"\[CHacek]\"",TraditionalForm]},{4.5,FormBox[
+"\"\[CAcute]\"",TraditionalForm]},{5.5,FormBox["\"d\"",TraditionalForm]},{6.5,FormBox[
+"\"d\[ZHacek]\"",TraditionalForm]},{7.5,FormBox["\"\:0111\"",TraditionalForm]},{8.5,FormBox[
+"\"e\"",TraditionalForm]},{9.5,FormBox["\"f\"",TraditionalForm]},{10.5,FormBox["\"g\"",
+TraditionalForm]},{11.5,FormBox["\"h\"",TraditionalForm]},{12.5,FormBox["\"i\"",TraditionalForm]},{13.5,FormBox[
+"\"j\"",TraditionalForm]},{14.5,FormBox["\"k\"",TraditionalForm]},{15.5,FormBox["\"l\"",
+TraditionalForm]},{16.5,FormBox["\"lj\"",TraditionalForm]},{17.5,FormBox["\"m\"",
+TraditionalForm]},{18.5,FormBox["\"n\"",TraditionalForm]},{19.5,FormBox["\"nj\"",
+TraditionalForm]},{20.5,FormBox["\"o\"",TraditionalForm]},{21.5,FormBox["\"p\"",TraditionalForm]},{22.5,FormBox[
+"\"r\"",TraditionalForm]},{23.5,FormBox["\"s\"",TraditionalForm]},{24.5,FormBox["\"\[SHacek]\"",
+TraditionalForm]},{25.5,FormBox["\"t\"",TraditionalForm]},{26.5,FormBox["\"u\"",TraditionalForm]},{27.5,FormBox[
+"\"v\"",TraditionalForm]},{28.5,FormBox["\"z\"",TraditionalForm]},{29.5,FormBox["\"\[ZHacek]\"",
+TraditionalForm]}}}},FrameTicksStyle -> {{14,GrayLevel[0]},{14,GrayLevel[0]},{14,GrayLevel[
+0]},{14,GrayLevel[0]}},GridLinesStyle -> Directive[GrayLevel[0.5,0.4]],ImageSize -> 1000,
+Method -> {"AxisPadding" -> Scaled[0.02],"DefaultBoundaryStyle" -> Automatic,"DefaultGraphicsInteraction" -> {"Version" -> 1.2,"TrackMousePosition" -> {True,False},"Effects" -> {"Highlight" -> {"ratio" -> 2},"HighlightPoint" -> {"ratio" -> 2},"Droplines" -> {"freeformCursorMode" -> True,"placement" -> {"x" -> "All","y" -> "None"}}}},"DefaultPlotStyle" -> Automatic,"DomainPadding" -> Scaled[
+0.02],"RangePadding" -> Scaled[0.05]},ExpressionUUID -> "a22302a0-3179-4295-9f52-d6525d10c1fa"],FormBox[
+FormBox[StyleBox["\"Liczba s\[LSlash]\[OAcute]w w j\:0119zyku chorwackim\"",20,GrayLevel[
+0],Bold,StripOnInput -> False],TraditionalForm],TraditionalForm]},"Legended",DisplayFunction -> Function[
+FormBox[GridBox[{{ItemBox[Slot[2],DefaultBaseStyle -> "LabeledLabel"]},{TagBox[ItemBox[
+PaneBox[TagBox[Slot[1],"SkipImageSizeLevel"],Alignment -> {Center,Baseline},BaselinePosition -> Baseline],
+DefaultBaseStyle -> "Labeled"],"SkipImageSizeLevel"]}},GridBoxAlignment -> {"Columns" -> {{Center}},"Rows" -> {{Center}}},
+AutoDelete -> False,GridBoxItemSize -> Automatic,BaselinePosition -> {2,1}],TraditionalForm]],
+InterpretationFunction -> Function[FormBox[RowBox[{"Legended","(",RowBox[{Slot[1],",",RowBox[
+{"Placed","[",RowBox[{Slot[2],",","Above"}],"]"}]}],")"}],TraditionalForm]],Editable -> True],
+TraditionalForm]],{525.0,-539.7},{Center,Center},{1000.0,1028.0}],InsetBox[GraphicsBox[
+{StyleBox[{InsetBox[BoxData[FormBox[StyleBox["\"pr\"",FontSize -> Scaled[0.38461538461538464],
+FontColor -> RGBColor[0.368417,0.506779,0.709798],StripOnInput -> False],TraditionalForm]],
+{0,0},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"po\"",FontSize -> Scaled[
+0.28964047763260364],FontColor -> RGBColor[0.880722,0.611041,0.142051],StripOnInput -> False],
+TraditionalForm]],{-11.5,36.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"na\"",FontSize -> Scaled[0.2163569698018517],FontColor -> RGBColor[0.560181,0.691569,
+0.194885],StripOnInput -> False],TraditionalForm]],{0.5,-36.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"ne\"",FontSize -> Scaled[0.19773189409016184],FontColor -> RGBColor[
+0.922526,0.385626,0.209179],StripOnInput -> False],TraditionalForm]],{43.5,-9.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"za\"",FontSize -> Scaled[0.1889547460413602],
+FontColor -> RGBColor[0.528488,0.470624,0.701351],StripOnInput -> False],TraditionalForm]],
+{39.5,30.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ko\"",FontSize -> Scaled[
+0.15653932681491736],FontColor -> RGBColor[0.363898,0.618501,0.782349],StripOnInput -> False],
+TraditionalForm]],{-49.5,-2.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ra\"",FontSize -> Scaled[0.16869105304144677],FontColor -> RGBColor[0.772079,0.431554,
+0.102387],StripOnInput -> False],TraditionalForm]],{37.5,-33.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"ma\"",FontSize -> Scaled[0.09972311153413517],FontColor -> RGBColor[
+0.28026441037696703,0.715,0.4292089322474965],StripOnInput -> False],TraditionalForm]],
+{-46.5,-19.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"op\"",FontSize -> Scaled[
+0.0847646448040149],FontColor -> RGBColor[0.5407932311309059,0.715,0.09762679674248334],
+StripOnInput -> False],TraditionalForm]],{49.5,8.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"pa\"",FontSize -> Scaled[0.09316864238124081],FontColor -> RGBColor[
+0.8996399512215667,0.7463488834690629,0.0],StripOnInput -> False],TraditionalForm]],
+{-42.5,-32.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"re\"",FontSize -> Scaled[
+0.11584970147962274],FontColor -> RGBColor[0.647624,0.37816,0.614037],StripOnInput -> False],
+TraditionalForm]],{-52.5,20.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"od\"",FontSize -> Scaled[0.1063262524876698],FontColor -> RGBColor[0.915,0.3325,
+0.2125],StripOnInput -> False],TraditionalForm]],{-0.5,56.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"do\"",FontSize -> Scaled[0.1075105996365839],FontColor -> RGBColor[
+0.571589,0.586483,0.0],StripOnInput -> False],TraditionalForm]],{31.5,47.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ka\"",FontSize -> Scaled[0.10275698710738082],
+FontColor -> RGBColor[0.736782672705901,0.358,0.5030266573755369],StripOnInput -> False],
+TraditionalForm]],{-33.5,-49.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ob\"",FontSize -> Scaled[0.0932822099160682],FontColor -> RGBColor[0.5833680111493557,
+0.4126186601628758,0.8290799721266107],StripOnInput -> False],TraditionalForm]],{-0.5,-59.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"go\"",FontSize -> Scaled[0.06664251103227482],
+FontColor -> RGBColor[0.9038177251280404,0.3492734123079395,0.18454431282010084],
+StripOnInput -> False],TraditionalForm]],{31.5,-49.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"pe\"",FontSize -> Scaled[0.07107164489054253],FontColor -> RGBColor[
+0.7132613816472081,0.358,0.5392132590042952],StripOnInput -> False],TraditionalForm]],
+{-50.5,35.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"sp\"",FontSize -> Scaled[
+0.07373236999221253],FontColor -> RGBColor[0.6184987019729621,0.39212575718243875,
+0.7412532450675947],StripOnInput -> False],TraditionalForm]],{-22.5,57.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"iz\"",FontSize -> Scaled[0.11997058060050186],
+FontColor -> RGBColor[1,0.75,0],StripOnInput -> False],TraditionalForm]],{18.5,-64.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"gr\"",FontSize -> Scaled[0.07668512589772432],
+FontColor -> RGBColor[0.7748409210981391,0.358,0.4444755060028629],StripOnInput -> False],
+TraditionalForm]],{-20.5,-61.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"de\"",FontSize -> Scaled[0.08951825733321797],FontColor -> RGBColor[0.9324333565611593,
+0.5282889043741062,0.0921900209050434],StripOnInput -> False],TraditionalForm]],{21.5,64.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"sa\"",FontSize -> Scaled[0.09227632603616856],
+FontColor -> RGBColor[0.8439466852489265,0.3467106629502147,0.3309221912517893],StripOnInput -> False],
+TraditionalForm]],{-40.5,54.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"st\"",FontSize -> Scaled[0.10351951198407892],FontColor -> RGBColor[0.9728288904374106,
+0.621644452187053,0.07336199581899142],StripOnInput -> False],TraditionalForm]],{61.5,-32.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"mo\"",FontSize -> Scaled[0.07081206195379425],
+FontColor -> RGBColor[0.8564488486273256,0.42032672705901153,0.06612212156831418],
+StripOnInput -> False],TraditionalForm]],{-5.5,68.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"kr\"",FontSize -> Scaled[0.08912888292809552],FontColor -> RGBColor[
+0.6753413537738198,0.3589675436319385,0.5991466155654507],StripOnInput -> False],
+TraditionalForm]],{68.5,6.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"up\"",FontSize -> Scaled[0.06450095180410143],FontColor -> RGBColor[0.3103557220216354,
+0.5867154223826917,0.7874268664259625],StripOnInput -> False],TraditionalForm]],{-61.5,-31.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"is\"",FontSize -> Scaled[0.10410357359176259],
+FontColor -> RGBColor[0.40082222609352647,0.5220066643438841,0.85],StripOnInput -> False],
+TraditionalForm]],{65.5,21.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"in\"",FontSize -> Scaled[0.09482348360301118],FontColor -> RGBColor[0.838355547812947,
+0.44746667828057946,0.0208888695323676],StripOnInput -> False],TraditionalForm]],
+{51.5,46.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"su\"",FontSize -> Scaled[
+0.07984879293934413],FontColor -> RGBColor[0.47401116530937026,0.47809330081437784,
+0.85],StripOnInput -> False],TraditionalForm]],{-52.5,-47.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"os\"",FontSize -> Scaled[0.08004348014190535],FontColor -> RGBColor[
+0.8857244243136628,0.3764133635295058,0.1393110607841571],StripOnInput -> False],
+TraditionalForm]],{50.5,-50.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"me\"",FontSize -> Scaled[0.0649714458769577],FontColor -> RGBColor[0.8607200975568693,
+0.34335598048862614,0.30296650407188447],StripOnInput -> False],TraditionalForm]],
+{-0.5,-70.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"pl\"",FontSize -> Scaled[
+0.07272648611231289],FontColor -> RGBColor[0.7678998606330495,0.7317110956258943,
+0.0],StripOnInput -> False],TraditionalForm]],{-71.5,0.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"ug\"",FontSize -> Scaled[0.056470104698451165],FontColor -> RGBColor[
+0.6102054708420535,0.39696347534213544,0.7619863228948663],StripOnInput -> False],
+TraditionalForm]],{-68.5,-17.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"tr\"",FontSize -> Scaled[0.09013476680799516],FontColor -> RGBColor[0.28240003484173815,
+0.6090799721266095,0.7538800418100857],StripOnInput -> False],TraditionalForm]],{-23.5,68.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ja\"",FontSize -> Scaled[0.06052608808514321],
+FontColor -> RGBColor[0.9046334610863751,0.334573307782725,0.22977756485604156],StripOnInput -> False],
+TraditionalForm]],{-10.5,-3.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"pu\"",FontSize -> Scaled[0.06344639612356148],FontColor -> RGBColor[0.47929071933511125,
+0.715,0.1759027208462221],StripOnInput -> False],TraditionalForm]],{-36.5,-61.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"je\"",FontSize -> Scaled[0.06381954659513715],
+FontColor -> RGBColor[0.9492067688690977,0.5394711792460651,0.10728609198218791],
+StripOnInput -> False],TraditionalForm]],{-64.5,31.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"be\"",FontSize -> Scaled[0.06623691269360561],FontColor -> RGBColor[
+0.428777913273419,0.5052332520359486,0.85],StripOnInput -> False],TraditionalForm]],
+{39.5,62.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"us\"",FontSize -> Scaled[
+0.07650666262870988],FontColor -> RGBColor[0.16397784358994957,0.7038177251280403,
+0.6117734123079395],StripOnInput -> False],TraditionalForm]],{35.5,-62.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"sm\"",FontSize -> Scaled[0.06086679068962534],
+FontColor -> RGBColor[0.19193353076984873,0.681453175384121,0.6453202369238185],StripOnInput -> False],
+TraditionalForm]],{-60.5,44.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"pi\"",FontSize -> Scaled[0.06594488188976379],FontColor -> RGBColor[0.7513196300394465,
+0.358,0.48066210763162087],StripOnInput -> False],TraditionalForm]],{70.5,-7.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ga\"",FontSize -> Scaled[0.06013671368002077],
+FontColor -> RGBColor[0.969373377466199,0.6043668873309952,0.08269188084126262],StripOnInput -> False],
+TraditionalForm]],{-71.5,16.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"mi\"",FontSize -> Scaled[0.07188284156788095],FontColor -> RGBColor[0.9637822400302223,
+0.5764112001511111,0.0977879519184],StripOnInput -> False],TraditionalForm]],{-39.5,65.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"sk\"",FontSize -> Scaled[0.07207752877044216],
+FontColor -> RGBColor[0.35558897405758294,0.5505288207539337,0.8417067688690995],
+StripOnInput -> False],TraditionalForm]],{68.5,36.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"mu\"",FontSize -> Scaled[0.05637276109717055],FontColor -> RGBColor[
+0.8774935098648088,0.34000129802703827,0.2750108168919853],StripOnInput -> False],
+TraditionalForm]],{-17.5,-74.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"um\"",FontSize -> Scaled[0.05755710824608463],FontColor -> RGBColor[0.26512246998569167,
+0.6229020240114467,0.73314696398283],StripOnInput -> False],TraditionalForm]],{-53.5,-57.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"br\"",FontSize -> Scaled[0.06834602405468547],
+FontColor -> RGBColor[0.9052934053395919,0.510195603559728,0.06776406480563275],StripOnInput -> False],
+TraditionalForm]],{-59.5,53.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ba\"",FontSize -> Scaled[0.06873539845980792],FontColor -> RGBColor[0.23716678280579248,
+0.645266573755366,0.699600139366951],StripOnInput -> False],TraditionalForm]],{57.5,58.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ku\"",FontSize -> Scaled[0.06964393873842693],
+FontColor -> RGBColor[0.9810598048862722,0.7553955338762525,0.0],StripOnInput -> False],
+TraditionalForm]],{52.5,-63.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"sv\"",FontSize -> Scaled[0.07102297308990223],FontColor -> RGBColor[0.37977756485605163,
+0.715,0.3025558265468435],StripOnInput -> False],TraditionalForm]],{67.5,-44.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ot\"",FontSize -> Scaled[0.07522497187851519],
+FontColor -> RGBColor[0.8613800418100862,0.48092002787339083,0.02824203762907758],
+StripOnInput -> False],TraditionalForm]],{-36.5,-73.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"di\"",FontSize -> Scaled[0.07976767327161029],FontColor -> RGBColor[
+0.9874666782805795,0.6948333914028977,0.033839968642435214],StripOnInput -> False],
+TraditionalForm]],{-70.5,-45.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"an\"",FontSize -> Scaled[0.06057475988578351],FontColor -> RGBColor[0.7175796237092107,
+0.7261199581899123,0.0],StripOnInput -> False],TraditionalForm]],{36.5,-73.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"gl\"",FontSize -> Scaled[0.061921346370165276],
+FontColor -> RGBColor[0.9930578157165594,0.7227890785827968,0.01874389756528967],
+StripOnInput -> False],TraditionalForm]],{-49.5,-68.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"te\"",FontSize -> Scaled[0.06935190793458511],FontColor -> RGBColor[
+0.8168067340273636,0.3521386531945273,0.3761554432877274],StripOnInput -> False],
+TraditionalForm]],{43.5,72.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ve\"",FontSize -> Scaled[0.06076944708834473],FontColor -> RGBColor[0.6319174318193065,
+0.38429816477207124,0.7077064204517338],StripOnInput -> False],TraditionalForm]],
+{-56.5,65.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ek\"",FontSize -> Scaled[
+0.06122371722765424],FontColor -> RGBColor[0.7896667828057927,0.3575666434388414,
+0.4213886953236787],StripOnInput -> False],TraditionalForm]],{68.5,-56.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"dr\"",FontSize -> Scaled[0.06330038072164057],
+FontColor -> RGBColor[0.8745421494417032,0.39318677583744527,0.11135537360425793],
+StripOnInput -> False],TraditionalForm]],{72.5,48.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"ok\"",FontSize -> Scaled[0.06552305961754781],FontColor -> RGBColor[
+0.596786740995709,0.404791067752503,0.7955331475107271],StripOnInput -> False],TraditionalForm]],
+{58.5,70.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"uz\"",FontSize -> Scaled[
+0.0657339707536558],FontColor -> RGBColor[0.8342400905885153,0.4628267270590103,0.0038160815296638794],
+StripOnInput -> False],TraditionalForm]],{51.5,-73.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"no\"",FontSize -> Scaled[0.06052608808514321],FontColor -> RGBColor[
+0.38354466123747527,0.5323732032575149,0.85],StripOnInput -> False],TraditionalForm]],
+{-70.5,-55.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"bo\"",FontSize -> Scaled[
+0.06354373972484209],FontColor -> RGBColor[0.6897400905885174,0.358,0.5753998606330502],
+StripOnInput -> False],TraditionalForm]],{-55.5,73.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"se\"",FontSize -> Scaled[0.06583131435493642],FontColor -> RGBColor[
+0.2187618985811806,0.715,0.5074848563512248],StripOnInput -> False],TraditionalForm]],
+{-63.5,-66.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ud\"",FontSize -> Scaled[
+0.05575625162239336],FontColor -> RGBColor[0.8633598745697435,0.40996018814538476,
+0.08339968642435877],StripOnInput -> False],TraditionalForm]],{68.5,-68.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"im\"",FontSize -> Scaled[0.05700549450549451],
+FontColor -> RGBColor[0.4567336004533182,0.4884598397280091,0.85],StripOnInput -> False],
+TraditionalForm]],{-71.5,65.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"bu\"",FontSize -> Scaled[0.05817361772086182],FontColor -> RGBColor[0.845266573755366,
+0.437100139366951,0.03816643438841502],StripOnInput -> False],TraditionalForm]],{-0.5,77.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ta\"",FontSize -> Scaled[0.06510123734533184],
+FontColor -> RGBColor[0.8493197142977551,0.7407577460330839,0.0],StripOnInput -> False],
+TraditionalForm]],{75.5,-20.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"vi\"",FontSize -> Scaled[0.066139569092325],FontColor -> RGBColor[0.9784200278733908,
+0.649600139366954,0.058265924741844846],StripOnInput -> False],TraditionalForm]],
+{13.5,78.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"sl\"",FontSize -> Scaled[
+0.06990352167517522],FontColor -> RGBColor[0.5472001045252132,0.43417993728487203,
+0.85],StripOnInput -> False],TraditionalForm]],{28.5,75.5},Center,Automatic],InsetBox[
+BoxData[FormBox[StyleBox["\"si\"",FontSize -> Scaled[0.07233711170719045],FontColor -> RGBColor[
+0.8878600487784333,0.33792799024431336,0.2577332520359445],StripOnInput -> False],
+TraditionalForm]],{9.5,-80.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ha\"",FontSize -> Scaled[0.0551235182140694],FontColor -> RGBColor[0.6453361616656581,
+0.37647057236169945,0.6741595958358548],StripOnInput -> False],TraditionalForm]],
+{-15.5,79.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ar\"",FontSize -> Scaled[
+0.05518841394825647],FontColor -> RGBColor[0.8949268664259606,0.5032845776173072,
+0.05843417978336459],StripOnInput -> False],TraditionalForm]],{-77.5,-27.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"uk\"",FontSize -> Scaled[0.05549666868564507],
+FontColor -> RGBColor[0.8064401951137368,0.3542119609772526,0.39343300814377197],
+StripOnInput -> False],TraditionalForm]],{81.5,17.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"da\"",FontSize -> Scaled[0.05599961062559489],FontColor -> RGBColor[
+0.9603267270590103,0.5591336352950514,0.10711783694067224],StripOnInput -> False],
+TraditionalForm]],{-79.5,25.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"dv\"",FontSize -> Scaled[0.05616184996106256],FontColor -> RGBColor[0.3383114092015346,
+0.5643508726387724,0.8209736910418415],StripOnInput -> False],TraditionalForm]],{78.5,-32.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"or\"",FontSize -> Scaled[0.056794583369386524],
+FontColor -> RGBColor[0.7658565873730018,0.358,0.4582975578876895],StripOnInput -> False],
+TraditionalForm]],{-4.5,-83.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"vo\"",FontSize -> Scaled[0.057654451847365236],FontColor -> RGBColor[0.8335801463353031,
+0.3487839707329394,0.3481997561078282],StripOnInput -> False],TraditionalForm]],{-18.5,-83.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"va\"",FontSize -> Scaled[0.057670675780912],
+FontColor -> RGBColor[0.9307395679624266,0.7498043964402695,0.0],StripOnInput -> False],
+TraditionalForm]],{-82.5,-12.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"sr\"",FontSize -> Scaled[0.055934714891407805],FontColor -> RGBColor[0.4177882075393331,
+0.715,0.25417864494993975],StripOnInput -> False],TraditionalForm]],{82.5,0.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"so\"",FontSize -> Scaled[0.05658367223327854],
+FontColor -> RGBColor[0.8510135028964549,0.47400900193096995,0.018912152606809424],
+StripOnInput -> False],TraditionalForm]],{83.5,-8.5},Center,Automatic],InsetBox[BoxData[
+FormBox[StyleBox["\"tu\"",FontSize -> Scaled[0.05494505494505495],FontColor -> RGBColor[
+0.9107287510704583,0.33890687339431275,0.20182187767614543],StripOnInput -> False],
+TraditionalForm]],{-76.5,36.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"fa\"",FontSize -> Scaled[0.055366877217270925],FontColor -> RGBColor[0.2198892179497479,
+0.6590886256402017,0.6788670615396974],StripOnInput -> False],TraditionalForm]],{-83.5,0.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ru\"",FontSize -> Scaled[0.0568594791035736],
+FontColor -> RGBColor[0.9840111653093676,0.677555826546838,0.04316985366470745],StripOnInput -> False],
+TraditionalForm]],{-37.5,77.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"to\"",FontSize -> Scaled[0.05708661417322835],FontColor -> RGBColor[0.8926354502560807,
+0.366046824615879,0.15658862564020168],StripOnInput -> False],TraditionalForm]],{22.5,-83.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ut\"",FontSize -> Scaled[0.05804382625248767],
+FontColor -> RGBColor[0.5750747800184488,0.4174563783225715,0.8498130499538777],StripOnInput -> False],
+TraditionalForm]],{83.5,28.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"vr\"",FontSize -> Scaled[0.05942286060396297],FontColor -> RGBColor[0.31827505306025683,
+0.715,0.3808317506505822],StripOnInput -> False],TraditionalForm]],{-74.5,48.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ro\"",FontSize -> Scaled[0.05973111534135156],
+FontColor -> RGBColor[0.7277983389807635,0.358,0.5168487092603637],StripOnInput -> False],
+TraditionalForm]],{-32.5,-84.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"kl\"",FontSize -> Scaled[0.0675672752444406],FontColor -> RGBColor[0.6361597700445392,
+0.7170733077827265,0.0],StripOnInput -> False],TraditionalForm]],{-83.5,-39.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"lj\"",FontSize -> Scaled[0.056664791901012375],
+FontColor -> RGBColor[0.15725938678540247,0.715,0.5857607804549424],StripOnInput -> False],
+TraditionalForm]],{80.5,-43.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"lu\"",FontSize -> Scaled[0.054977502812148485],FontColor -> RGBColor[0.6672593867853922,
+0.7205288207539324,0.0],StripOnInput -> False],TraditionalForm]],{39.5,83.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"hi\"",FontSize -> Scaled[0.055707579821753055],
+FontColor -> RGBColor[0.529922539669161,0.44454647619850335,0.85],StripOnInput -> False],
+TraditionalForm]],{72.5,58.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"le\"",FontSize -> Scaled[0.056437656831357624],FontColor -> RGBColor[0.7989994773739094,
+0.735166608597101,0.0],StripOnInput -> False],TraditionalForm]],{84.5,39.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"bl\"",FontSize -> Scaled[0.057394868910616945],
+FontColor -> RGBColor[0.6670481226429111,0.3638052617916352,0.6198796933927223],StripOnInput -> False],
+TraditionalForm]],{-50.5,81.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"lo\"",FontSize -> Scaled[0.05744354071125725],FontColor -> RGBColor[0.922066817647527,
+0.5213778784316846,0.08286013588277422],StripOnInput -> False],TraditionalForm]],
+{-45.5,-83.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"bi\"",FontSize -> Scaled[
+0.060818118888985036],FontColor -> RGBColor[0.8781534541180211,0.4921023027453475,
+0.04333810870621905],StripOnInput -> False],TraditionalForm]],{-84.5,11.5},Center,
+Automatic],InsetBox[BoxData[FormBox[StyleBox["\"la\"",FontSize -> Scaled[0.06268387124686338],
+FontColor -> RGBColor[0.5019668524892619,0.46131988850644284,0.85],StripOnInput -> False],
+TraditionalForm]],{51.5,81.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"ci\"",FontSize -> Scaled[0.057281301375789566],FontColor -> RGBColor[0.5788038738141875,
+0.715,0.049249615145579635],StripOnInput -> False],TraditionalForm]],{-83.5,-51.5},
+Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"ti\"",FontSize -> Scaled[0.05598338669204811],
+FontColor -> RGBColor[0.7042770479220728,0.358,0.5530353108891188],StripOnInput -> False],
+TraditionalForm]],{-85.5,47.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox[
+"\"li\"",FontSize -> Scaled[0.06776196244700183],FontColor -> RGBColor[0.6536293927965667,
+0.37163285420200276,0.6534265180085832],StripOnInput -> False],TraditionalForm]],
+{85.5,-20.5},Center,Automatic],InsetBox[BoxData[FormBox[StyleBox["\"fi\"",FontSize -> Scaled[
+0.055561564419832135],FontColor -> RGBColor[0.9986489531525362,0.7507447657626809,
+0.0036478264881522893],StripOnInput -> False],TraditionalForm]],{84.5,51.5},Center,
+Automatic]},{{}},StripOnInput -> False]},{DisplayFunction -> Identity,ImagePadding -> {{0.0,0.0},{5.6843418860808015*^-14,2.8421709430404007*^-14}},Background -> GrayLevel[
+0.85],ImageSize -> 500,PlotRange -> {{-91.0,91.0},{-91.0,89.0}},DefaultBaseStyle -> {"Graphics",FontFamily -> "Helvetica"},Method -> {"DefaultBoundaryStyle" -> Automatic,"DefaultGraphicsInteraction" -> {"Version" -> 1.2,"TrackMousePosition" -> {True,False},"Effects" -> {"Highlight" -> {"ratio" -> 2},"HighlightPoint" -> {"ratio" -> 2},"Droplines" -> {"freeformCursorMode" -> True,"placement" -> {"x" -> "All","y" -> "None"}}}},"DefaultPlotStyle" -> Automatic}},
+ExpressionUUID -> "c4cf65bf-f820-4309-870e-1f8c7ff5d9aa"],{1325.0,-539.7},ImageScaled[
+{0.5,0.5}],{500,1028}]}},{Directive[Antialiasing -> False],{},{{LineBox[CompressedData[
+"1:eJxTTMoPSmNiYGAoZgESPpnFJai8TCDNACawiBfNmgkEdyccAAC+1Q+O"]]},{LineBox[CompressedData[
+"1:eJxTTMoPSmNiYGAoZgESPpnFJai8IgYQyJjgkAmiccgVzZoJBHcnHAAAQLgSEA=="]]},{LineBox[
+CompressedData["1:eJxTTMoPSmNiYGAoZgESPpnFJai8IgYwmOmQCaJwyBXNmgkEdyccAAAtWhFS"]]},{LineBox[
+CompressedData["1:eJxTTMoPSmNiYGAoZgESPpnFJai8TCDNACZQxYtAQgwZExzAcgCvoQub"]]},{LineBox[
+CompressedData["1:eJxTTMoPSmNiYGAoZgESPpnFJai8IgYQyJjgkAmisckxzITIAQDzegx9"]]},{LineBox[
+CompressedData["1:eJxTTMoPSmNiYGAoZgESPpnFJai8TCDNUDRrJhDcnXAAVa4IJMeQMcEBLg8AzkwWAw=="]]},{LineBox[
+CompressedData["1:eJxTTMoPSmNiYGAoZgESPpnFJai8IgYQyJjgUDRrJhDcnXAAmzzDTIQ8ABrAFuU="]]}}}},
+PlotRangePadding -> {6,5},PlotRange -> {{0,1600.0},{-1079.4,0}},ImageSize -> {2200,1500},
+ExpressionUUID -> "4fa97f23-2ee6-4256-823b-fb92095955e6"],StandardForm],"Output",
+CellLabel -> "Out[22]= ",ExpressionUUID -> "cb3832c5-6a90-4e47-a244-9e5529a6cc45"]},
+Open],ExpressionUUID -> "430f4f04-2eb9-4355-be30-11750d34a2ae"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"CloudExport","[",RowBox[{"%",",","\"pdf\""}],"]"}]],"Input",
+CellLabel -> "In[23]:= ",ExpressionUUID -> "4640fed0-eca6-44bc-8f96-cc85f9a5b565"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"CloudObject","[",TemplateBox[{"\"https://www.wolframcloud.com/obj/fc785d43-368a-4a77-9ead-ef6c31bf4939\"","https://www.wolframcloud.com/obj/fc785d43-368a-4a77-9ead-ef6c31bf4939"},
+"HyperlinkURL"],"]"}],CloudObject["https://www.wolframcloud.com/obj/fc785d43-368a-4a77-9ead-ef6c31bf4939"],
+SelectWithContents -> True],StandardForm],"Output",CellLabel -> "Out[23]= ",ExpressionUUID -> "7765d673-d359-4d93-98d4-c470d1604e38"]},
+Open],ExpressionUUID -> "4ab6bbc9-aebd-4d12-a4c5-463adc728172"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "12.2 for Wolfram Cloud 1.57.0.2 (December 8, 2020)"]
